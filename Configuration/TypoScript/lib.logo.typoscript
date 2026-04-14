@@ -1,0 +1,19 @@
+lib.logo = IMAGE
+lib.logo {
+  # Hier wird der Pfad aus deiner Konstante genommen
+# WICHTIG: In den Konstanten muss der Pfad jetzt mit "1:/" beginnen
+file = {$plugin.genf.sitelogo.sitelogo}
+
+# HTML-Klasse für das <img> Tag
+params = class="ps-logo"
+
+# Alternativtext (wichtig für SEO/Barrierefreiheit)
+altText = Sul Zuführtechnik
+titleText = Sul Zuführtechnik
+
+# Falls das Bild verlinkt sein soll:
+stdWrap.typolink {
+parameter = 1
+ATagParams = class="navbar-brand"
+}
+}

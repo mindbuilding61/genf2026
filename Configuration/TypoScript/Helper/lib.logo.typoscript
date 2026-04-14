@@ -1,0 +1,22 @@
+lib.logo = IMAGE
+lib.logo {
+  file = {$plugin.genf.sitelogo.sitelogo}
+
+# Verarbeitet den Wert aus den Konstanten.
+# '200' ist der Standardwert, falls das Feld leer ist.
+width = {$plugin.genf.sitelogo.siteLogoWidth}
+width.ifEmpty = 200
+
+# Sorgt dafür, dass das Seitenverhältnis erhalten bleibt (kein Verzerren)
+file.width = {$plugin.genf.sitelogo.siteLogoWidth}
+file.width.ifEmpty = 200
+
+params = class="ps-logo"
+altText = {$plugin.genf.sitelogo.siteTitle}
+titleText = {$plugin.genf.sitelogo.siteTitle}
+
+stdWrap.typolink {
+parameter = 1
+ATagParams = class="navbar-brand"
+}
+}

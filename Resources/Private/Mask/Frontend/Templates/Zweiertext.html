@@ -1,0 +1,13 @@
+<f:if condition="{data.tx_mask_zweiertext}">
+    <div class="zweier">
+        <main class="container py-4">
+            <div class="grid-tiles-mask">
+                <f:for each="{data.tx_mask_zweiertext}" as="data_item">
+                     <f:if condition="{data_item.tx_mask_zweiertext_inhelt}">
+                    {data_item.tx_mask_zweiertext_inhelt -> f:format.html()}
+                     </f:if>
+                 </f:for>
+            </div>
+        </main>
+    </div>
+</f:if>

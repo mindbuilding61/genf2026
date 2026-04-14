@@ -1,0 +1,2 @@
+# Überholt: Container-Override liegt in EXT:genf2026/Configuration/TypoScript/container.typoscript
+# und wird von setup.typoscript per @import geladen.

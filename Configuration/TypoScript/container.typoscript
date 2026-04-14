@@ -1,0 +1,25 @@
+# b13 Container „2cols with header“ — ein Block, drei colPos (200 / 201 / 202)
+tt_content.b13-2cols-with-header-container < lib.contentElement
+tt_content.b13-2cols-with-header-container {
+    templateName = 2ColsWithHeader
+    templateRootPaths {
+        10 = EXT:genf2026/Resources/Private/Templates
+    }
+    dataProcessing {
+        200 = B13\Container\DataProcessing\ContainerProcessor
+        200 {
+            colPos = 200
+            as = children_200
+        }
+        201 = B13\Container\DataProcessing\ContainerProcessor
+        201 {
+            colPos = 201
+            as = children_201
+        }
+        202 = B13\Container\DataProcessing\ContainerProcessor
+        202 {
+            colPos = 202
+            as = children_202
+        }
+    }
+}

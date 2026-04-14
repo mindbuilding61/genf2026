@@ -1,0 +1,57 @@
+#
+# BACKENDLAYOUT: DEFAULT
+#
+mod.web_layout.BackendLayouts {
+default {
+        title = LLL:EXT:genf2026/Resources/Private/Language/locallang_be.xlf:backend_layout.default
+        config {
+            backend_layout {
+                colCount = 1
+                rowCount = 5
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Slider
+                                colPos = 0
+                            }
+                        }
+                    }
+                    2 {
+                        columns {
+                            1 {
+                                name = Oben
+                                colPos = 1
+                            }
+                        }
+                    }
+                    3 {
+                        columns {
+                            1 {
+                                name = Slider unten
+                                colPos = 2
+                            }
+                        }
+                    }
+                    4 {
+                        columns {
+                            1 {
+                                name = Sliderinhalt
+                                colPos = 3
+                            }
+                        }
+                    }
+                    5 {
+                        columns {
+                            1 {
+                                name = Unten
+                                colPos = 4
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        icon = EXT:genf2026/Resources/Public/Images/BackendLayouts/1column.png
+    }
+}

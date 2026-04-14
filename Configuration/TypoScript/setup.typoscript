@@ -1,0 +1,238 @@
+######################
+#### DEPENDENCIES ####
+######################
+@import 'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:fluid_styled_content/Configuration/TypoScript/container.typoscript'
+@import 'EXT:genf2026/Configuration/TypoScript/container.typoscript'
+
+
+################
+#### HELPER ####
+################
+@import 'EXT:genf2026/Configuration/TypoScript/Helper/DynamicContent.typoscript'
+@import 'EXT:genf2026/Configuration/TypoScript/Helper/FooterContent.typoscript'
+@import 'EXT:genf2026/Configuration/TypoScript/Helper/lib.logo.typoscript'
+
+
+##########################################
+#  wirklich leere und NBSP-Absätze entfernen
+##########################################
+lib.parseFunc_RTE_STRIPPED =< lib.parseFunc_RTE
+lib.parseFunc_RTE_STRIPPED {
+stripEmptyTags = p
+
+innerStdWrap_all {
+setContentToCurrent = 1
+replace {
+10 {
+search = <p[^>]>(?:\s| | |\xC2\xA0|<br\s/?>|\r|\n)*</p>
+replace =
+useRegExp = 1
+noEmpty = 1
+modifiers = i
+}
+}
+}
+}
+
+
+##############
+#### PAGE ####
+##############
+page = PAGE
+page {
+
+typeNum = 0
+shortcutIcon = EXT:genf2026/Resources/Public/Icons/favicon.ico
+
+########################
+# TEMPLATE
+########################
+10 = FLUIDTEMPLATE
+10 {
+templateName = TEXT
+templateName {
+data = pagelayout
+required = 1
+case = uppercamelcase
+split.token = pagets__
+split.1.current = 1
+ifEmpty = Default
+}
+
+templateRootPaths {
+0 = EXT:genf2026/Resources/Private/Templates/Page/
+1 = {$page.fluidtemplate.templateRootPath}
+}
+
+partialRootPaths {
+0 = EXT:genf2026/Resources/Private/Partials/Page/
+1 = {$page.fluidtemplate.partialRootPath}
+}
+
+layoutRootPaths {
+0 = EXT:genf2026/Resources/Private/Layouts/Page/
+1 = {$page.fluidtemplate.layoutRootPath}
+}
+
+dataProcessing {
+
+10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+10.references.fieldName = media
+
+20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+20 {
+as = mainMenu
+expandAll = 1
+titleField = nav_title // title
+levels = 6
+}
+
+22 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+22 {
+as = rootline
+special = rootline
+special.range = 0|-1
+}
+
+23 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+23 {
+as = bluemenue
+special = directory
+special.value = 7
+}
+
+26 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+26 {
+as = footerMenu
+levels = 2
+special = directory
+special.value = {$plugin.genf.vorgaben.footerContentId}
+}
+
+30 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
+30.languages = auto
+}
+}
+
+
+########################
+# SETTINGS
+########################
+settings {
+siteLogo = EXT:genf2026/Resources/Public/Images/logo_iwa.png
+siteTitle = {$plugin.genf.sitelogo.siteTitle}
+rootId = {$plugin.genf.vorgaben.rootId}
+searchId = {$plugin.genf.vorgaben.searchId}
+footerContentId = {$plugin.genf.vorgaben.footerContentId}
+sprachauswahl = {$plugin.genf.sprachauswahl.sprachauswahl}
+suchauswahl = {$plugin.genf.suchauswahl.suchauswahl}
+navclass = {$plugin.genf.navigation.navclass}
+}
+
+
+########################
+# CONTENT
+########################
+variables {
+content0 < styles.content.get
+content100 < styles.content.get
+content100.select.where = colPos = 100
+content100.select.pidInList = {$plugin.genf.vorgaben.footerContentId}
+}
+
+
+########################
+# CSS
+########################
+includeCSS {
+
+base = EXT:genf2026/Resources/Public/Css/bootstrap.min.css
+menu = EXT:genf2026/Resources/Public/Css/jquery.smartmenus.bootstrap-4.css
+custom = EXT:genf2026/Resources/Public/Css/customstyles.css
+aos = EXT:genf2026/Resources/Public/Css/aos.css
+grid = EXT:genf2026/Resources/Public/Css/stylesheet_grid2.css
+kachel = EXT:genf2026/Resources/Public/Css/kachel.css
+reihe = EXT:genf2026/Resources/Public/Css/reihe.css
+awesome = EXT:genf2026/Resources/Public/Css/awesome.css
+
+########################
+# DYNAMISCHE FONTS
+########################
+
+fontBody = TEXT
+fontBody.value = EXT:genf2026/Resources/Public/Css/{$plugin.genf.fonts.fontfamily}.css
+
+fontH1 = TEXT
+fontH1 {
+value = EXT:genf2026/Resources/Public/Css/{$plugin.genf.fonts.family1}.css
+if.isTrue = {$plugin.genf.fonts.family1}
+}
+
+fontH2 = TEXT
+fontH2 {
+value = EXT:genf2026/Resources/Public/Css/{$plugin.genf.fonts.family2}.css
+if.isTrue = {$plugin.genf.fonts.family2}
+}
+
+fontH3 = TEXT
+fontH3 {
+value = EXT:genf2026/Resources/Public/Css/{$plugin.genf.fonts.family3}.css
+if.isTrue = {$plugin.genf.fonts.family3}
+}
+
+fontH4 = TEXT
+fontH4 {
+value = EXT:genf2026/Resources/Public/Css/{$plugin.genf.fonts.family4}.css
+if.isTrue = {$plugin.genf.fonts.family4}
+}
+}
+
+
+########################
+# JS
+########################
+includeJS {
+bootstrap = EXT:genf2026/Resources/Public/JavaScript/Dist/bootstrap.js
+popper = EXT:genf2026/Resources/Public/JavaScript/Dist/popper.min.js
+height = EXT:genf2026/Resources/Public/JavaScript/height.js
+}
+
+includeJSFooterlibs {
+main = EXT:genf2026/Resources/Public/JavaScript/Dist/javascript.js
+aos = EXT:genf2026/Resources/Public/JavaScript/Dist/aos.js
+}
+}
+
+
+################
+#### CONFIG ####
+################
+config {
+absRefPrefix = auto
+uniqueLinkVars = 1
+pageTitleFirst = 1
+linkVars = L
+doctype = html5
+debug = 0
+cache_period = 86400
+index_enable = 1
+noScaleUp = 1
+}
+
+
+##########################################
+# CSS Variablen (JS)
+##########################################
+page.headerData.220 = TEXT
+page.headerData.220.value (
+<script>
+document.documentElement.style.setProperty('--primarycolor', '{$plugin.genf.fonts.primarycolor}');
+document.documentElement.style.setProperty('--fontsize', '{$plugin.genf.fonts.fontsize}');
+document.documentElement.style.setProperty('--fontfamily', '{$plugin.genf.fonts.fontfamily}');
+document.documentElement.style.setProperty('--family1', '{$plugin.genf.fonts.family1}');
+document.documentElement.style.setProperty('--family2', '{$plugin.genf.fonts.family2}');
+document.documentElement.style.setProperty('--family3', '{$plugin.genf.fonts.family3}');
+document.documentElement.style.setProperty('--family4', '{$plugin.genf.fonts.family4}');
+</script>
+)

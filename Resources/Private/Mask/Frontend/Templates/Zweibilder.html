@@ -1,0 +1,17 @@
+<main class="container py-4">
+    <div class="grid-tiles-mask">
+        <!-- ► 1. Ebene: Datensatz-Paar --------------------------------- -->
+        <div class="item square">
+            <f:for each="{data_item.tx_mask_bild_links}" as="file">
+                <f:image image="{file}" width="200" />
+                <div class="bildtitle" id="bildtitle">{fileReference.description}</div>
+            </f:for>
+        </div>
+
+        <div class="item square">
+            <f:for each="{data_item.tx_mask_rechtes_bild}" as="file">
+                <f:image image="{file}" width="200" />
+                <div class="bildtitle" id="bildtitle">{fileReference.description}</div>
+            </f:for>
+        </div>
+</main>

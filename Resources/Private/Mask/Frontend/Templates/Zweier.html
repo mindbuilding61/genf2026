@@ -1,0 +1,18 @@
+<f:if condition="{data.tx_mask_zweier}">
+    <div class="zweier">
+        <main class="container py-4">
+            <div class="grid-tiles-mask">
+        <f:for each="{data.tx_mask_zweier}" as="data_item">
+                <f:for each="{data_item.tx_mask_linkesbild}" as="file">
+                    <f:image image="{file}" />
+                    {file.description}
+                </f:for>
+                <f:for each="{data_item.tx_mask_rechtesbild}" as="file">
+                    <f:image image="{file}" />
+                    {file.description}
+                </f:for>
+        </f:for>
+            </div>
+        </main>
+    </div>
+</f:if>

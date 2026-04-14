@@ -1,0 +1,15 @@
+<f:if condition="{data.tx_mask_zweiineinsblock}">
+    <div class="zweier">
+        <main class="container py-4">
+            <div class="grid-tiles-mask">
+                <div class="textelement">
+                <f:for each="{data.tx_mask_zweiineinsblock}" as="data_item">
+                        <f:if condition="{data_item.tx_mask_zweineinstext}">
+                            {data_item.tx_mask_zweineinstext}
+                        </f:if>
+                </f:for>
+            </div>
+            </div>
+        </main>
+    </div>
+</f:if>

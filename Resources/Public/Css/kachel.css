@@ -1,0 +1,169 @@
+
+.grid-tiles-mask{
+    display:grid;gap:1rem;
+    grid-template-columns:repeat(2,1fr);
+}
+@media (max-width:991.98px){ .grid-tiles{grid-template-columns:repeat(2,1fr);} }
+@media (max-width:575.98px){ .grid-tiles{grid-template-columns:1fr;} }
+
+/* ─────────  KACHELN  ───────── */
+.item        {position:relative;overflow:hidden;border-radius:4px;}
+.item.square {aspect-ratio:1/1;}
+.item.big    {grid-column:span 2;grid-row:span 2;aspect-ratio:2/2;}
+@media (max-width:991.98px){ .item.big{grid-row:span 1;} }
+@media (max-width:575.98px){ .item.big{grid-column:span 1;} }
+
+.item img{width:100%;height:100%;object-fit:cover;display:block;}
+
+/* ─────────  TEXT-KACHEL  ───────── */
+.tile{
+    background:#002B5E;
+    color:#fff;
+    padding:1.2rem 0.3rem;
+    display:flex;
+    flex-direction:column;
+}
+.tile h2{
+    font-size:1rem;
+    font-weight:800;
+    line-height:1.6;
+    margin-bottom:-1.6rem;
+    color: #ffffff;
+
+    margin-left: 0.8rem;
+}
+.tile p {
+    font-size:1rem;
+    line-height:1.32;
+    margin-bottom:auto;
+    font-weight:100;
+}
+
+@media (max-width: 1200px) {
+    .tile h2{
+        font-size:1rem;
+        font-weight:400;
+        line-height:1;
+        margin-bottom:-1.2rem;
+        color: #ffffff;
+        margin-left: 0.8rem;
+    }
+    .tile p {
+        font-size:0.8rem;
+        line-height:1.32;
+        margin-bottom:auto;
+        font-weight:100;
+    }
+}
+
+.no-gutters .grid-tiles-mask{
+    display:grid;gap:1rem;
+    grid-template-columns:repeat(2,1fr);
+    padding: 7px;
+}
+
+.bildundtext main.container.py-4{
+    margin-bottom: -45px;
+}
+
+.zweier img{
+    height: auto;
+    width: 285px;
+    margin-bottom: -45px;
+}
+.quadratelement main.container.py-4{
+    margin-bottom: -45px;
+}
+
+.item.square a{
+    padding: 3px 10px;
+    font-weight:600;
+    color:#fff;
+    text-decoration:none;
+    display:inline-flex;       /* ermöglicht Ausrichtung in einer Zeile */
+    align-items:center;
+    gap:.65rem;                /* Abstand zum Icon */
+}
+.item.square a::after{
+    content:"   ";                /* Pflicht bei ::after/::before */
+    width:1rem;              /* Breite des Icons */
+    height:1em;             /* Höhe des Icons */
+    background:url("mehr.png") no-repeat center/contain;
+}
+
+/* CTA/Button – jetzt mit Bild-Icon */
+.mehr-erfahren{
+    align-self:flex-start;
+    display:inline-flex;gap:1.35rem;align-items:center;
+    font-size:1.0rem;font-weight:300;color:#fff;text-decoration:none;padding: 12px;
+}
+.mehr-erfahren img.cta-icon{
+    width:1.4rem;height:1.4rem;           /* Größe an Ihr Icon anpassen */
+    display:inline-block;
+}
+
+/* Nur in den blauen Text-Kacheln von maks */
+.bildundtext .item.square.tile p:first-child,
+.bildundtext .item.square.tile p:last-child {
+    /* nur ausblenden, wenn wirklich kein sichtbarer Inhalt drinsteckt */
+    display: none;
+}
+.quadratelement .grid-tiles-mask img{
+    width: 205.5%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    aspect-ratio:1/1;
+    object-fit: cover;
+}
+.quadratlink a{
+    min-width: 320px;
+    color: #0055a5;
+    text-decoration: none;
+    background-color: #FDC400;
+    -webkit-text-decoration-skip: objects;
+    font-size: 2rem;
+    border-radius: 12px;
+    padding: 6px 23px;
+    position: relative;
+    top: 16rem;
+}
+
+
+.ce-col.col-md-6 #c54{
+    margin-left: -5px;
+}
+
+.ce-col.col-md-6 #c47{
+    margin-left: 5px;
+    width: 640px;
+}
+
+@media only screen and (min-width: 401px) and (max-width: 990px) {
+    #c102{
+        padding-top: 23px;
+    }
+}
+
+.image-overlay-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.overlay-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6); /* halbtransparent schwarzer Hintergrund */
+    color: #fff;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+}

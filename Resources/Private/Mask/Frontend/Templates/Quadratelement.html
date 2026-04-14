@@ -1,0 +1,17 @@
+ <div class="quadratelement">
+        <main class="container py-4">
+            <div class="grid-tiles-mask">
+                <!-- ► 1. Ebene: Datensatz-Paar --------------------------------- -->
+                <f:for each="{data.tx_mask_quadratelement}" as="file">
+                    <f:image image="{file}" width="400" />
+                    {file.description}
+                </f:for>
+
+                    <!-- Link -->
+                <div class="quadratlink">
+                   <f:if condition="{data.tx_mask_kontaktlink}">
+                      <f:link.typolink parameter="{data.tx_mask_kontaktlink}"></f:link.typolink>
+                   </f:if>
+               </div>
+        </main>
+    </div>

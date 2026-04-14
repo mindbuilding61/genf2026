@@ -1,0 +1,12 @@
+#
+# PageTS for Genf
+	#
+
+# Die folgenden Dateien sind in deinem Beispiel auskommentiert:
+	# @import 'EXT:genf2026/Configuration/TsConfig/Page/RTE.tsconfig'
+# @import 'EXT:genf2026/Configuration/TsConfig/Page/TCEFORM.tsconfig'
+# @import 'EXT:genf2026/Configuration/TsConfig/Page/TCEMAIN.tsconfig'
+
+# Aktive Imports:
+# Backend-Layouts zentral laden (ohne rekursive/doppelte Imports)
+@import 'EXT:genf2026/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts.tsconfig'

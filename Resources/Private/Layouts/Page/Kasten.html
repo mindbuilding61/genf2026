@@ -1,0 +1,59 @@
+<f:spaceless>
+    <div class="main">
+        <f:render partial="Mainmenu" arguments="{_all}"/>
+    </div>
+    <div class="slider">
+        <f:render section="Slider" />
+    </div>
+    <f:render partial="rootline" arguments="{_all}"/>
+    <div class="main">
+        <f:render section="Main2" />
+    </div>
+    <div class="slidersection">
+        <div class="sliderunten">
+            <f:render section="sliderunten" />
+        </div>
+        <div class="sliderinhalt">
+            <f:render section="sliderinhalt" />
+        </div>
+    </div>
+
+    <div class="main">
+        <f:render section="Main3" />
+    </div>
+
+    <div class="slidersection">
+        <div class="sliderunten">
+            <f:render section="sliderunten2" />
+        </div>
+        <div class="sliderinhalt">
+            <f:render section="sliderinhalt2" />
+        </div>
+        <script>
+            // Warte, bis die Seite vollständig geladen ist
+            window.onload = function() {
+                console.log("Seite geladen"); // Überprüfen, ob der Code ausgeführt wird
+
+                // Hole das Div-Element
+                var sliderunten2 = document.getElementById("sliderunten2");
+                if (sliderunten2) {
+                    console.log("Div gefunden"); // Überprüfen, ob das Div-Element gefunden wurde
+                    // Ermittele die Höhe des Divs
+                    var hoehe = sliderunten.offsetHeight;
+                    // Setze die Höhe in die CSS-Variable
+                    document.documentElement.style.setProperty('--slideruntenheight', hoehe + 'px');
+                    console.log("Die Höhe des Divs 'sliderunten2' beträgt: " + hoehe + " Pixel");
+                } else {
+                    console.log("Div 'sliderunten2' nicht gefunden"); // Fehlerbehebung, falls das Div-Element nicht gefunden wird
+                }
+            };
+        </script>
+    </div>
+
+    <div class="main">
+        <f:render section="Main4" />
+    </div>
+    <div class="footer">
+        <f:render section="Footer" />
+    </div>
+</f:spaceless>

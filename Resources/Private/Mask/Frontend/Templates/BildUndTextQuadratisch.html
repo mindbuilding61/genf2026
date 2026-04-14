@@ -1,0 +1,33 @@
+<f:if condition="{data.tx_mask_bild}">
+    <div class="bildundtext">
+        <main class="container py-4">
+            <div class="grid-tiles-mask">
+
+                <!-- ► 1. Ebene: Datensatz-Paar --------------------------------- -->
+                <f:for each="{data.tx_mask_bild}" as="dataItem">
+
+                    <!-- ► 2. Ebene: Bild(er) im Paar ----------------------------- -->
+                    <f:for each="{dataItem.tx_mask_bild}" as="file">
+
+                        <!-- Bild-Kachel -->
+                        <div class="item square">
+                            <f:image image="{file}" alt="{file.alternative}" />
+                        </div>
+
+                    </f:for>
+
+                    <!-- Optionaler Fließtext zum Paar -->
+                    <f:if condition="{dataItem.tx_mask_text}">
+                        <div class="item square tile">
+                            <f:format.html parseFuncTSPath="lib.parseFunc_RTE">
+                                {dataItem.tx_mask_text}
+                            </f:format.html>
+                        </div>
+                    </f:if>
+
+                </f:for>
+
+            </div><!-- /.grid-tiles -->
+        </main>
+    </div>
+</f:if>

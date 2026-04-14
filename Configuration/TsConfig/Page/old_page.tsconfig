@@ -1,0 +1,104 @@
+
+#
+# PageTS für die Extension "genf2026"
+#
+
+# --- Überschriften (Header Layouts) ---
+	TCEFORM.tt_content.header_layout {
+	altLabels {
+		0 = h2 - Themenüberschrift
+		1 = h1 - Seitenüberschrift
+		2 = h2 - Überschrift 2. Ordnung
+		3 = h3 - Überschrift 3. Ordnung
+		4 = h4 - Überschrift 4. Ordnung
+		5 = h5 - Überschrift 5. Ordnung
+	}
+	removeItems = 5
+	label = Format der Überschrift
+
+# Zusätzliche Option (v13 unterstützt sprechende IDs oder Zahlen)
+	addItems.1525215969 = Eine Überschrift mal anders
+}
+
+# --- Inhaltselement Layouts ---
+TCEFORM.tt_content.layout {
+	removeItems = 0,1,2
+	addItems {
+		3 = Normal
+		4 = Grüner Rahmen
+		5 = Grauer Rahmen
+		6 = Roter Rahmen
+		7 = Oranger Rahmen
+		8 = Blauer Rahmen
+		9 = Schwarzer Button
+		10 = gelber Kasten
+		11 = grüner Kasten
+		12 = blauer Kasten
+	}
+}
+
+# --- CType spezifische Anpassungen ---
+TCEFORM.tt_content {
+	header_link.disabled = 0
+	subheader.disabled = 0
+
+	layout.types {
+		textpic.addItems {
+			10 = Red
+			20 = Blue
+		}
+		textmedia {
+			removeItems = 1,2,3,4,5
+			altLabels {
+				0 = langweilig
+				6 = Pink
+			}
+		}
+		menu_section {
+			removeItems = 1,2,3,4,5,7,8
+			altLabels {
+				0 = Sektionslayout
+				6 = SChmonzesfarben
+			}
+		}
+	}
+
+	CType.types.menu_section {
+		label = Menue ausgewählter Seiten mit Titel der enthaltenen Inhaltselemente
+	}
+}
+
+# --- Seiten-Eigenschaften (Pages) ---
+TCEFORM.pages {
+	title.label {
+	default = Title
+		de = Der Titel der Seite, der auch in der Navigation angezeigt wird.
+	}
+	seo_title.label {
+	default = SEO Title
+		de = SEO-Kram - also Überschrift
+	}
+	tsconfig_includes.label {
+	default = TSConfig Include
+		de = Hier gehört das TSConfig hin, was ich selbst gemacht hab.
+	}
+	doktype.label {
+	default = Page Type
+		de = Welche Art von Seite.
+	}
+	storage_pid.suggest.default {
+		minimumCharacters = 1
+	}
+}
+
+# --- Kopierverhalten ---
+TCEMAIN.table.pages {
+	disablePrependAtCopy = 1
+	disableHideAtCopy = 1
+}
+
+# --- RTE Konfiguration ---
+# In v13 muss das Preset oft in der Extension Configuration registriert werden.
+# Der Aufruf hier bleibt bestehen, sofern das Preset "genf2026" in deiner
+# ext_localconf.php oder per YAML registriert wurde.
+	RTE.default.preset = genf2026

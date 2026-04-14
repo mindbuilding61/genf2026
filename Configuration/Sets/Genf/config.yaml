@@ -1,0 +1,4 @@
+name: mindbuilding/genf2026
+label: Genf
+dependencies:
+  - typo3/fluid-styled-content

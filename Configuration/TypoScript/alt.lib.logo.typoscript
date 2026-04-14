@@ -1,0 +1,4 @@
+lib.logo = TEXT
+lib.logo.value (
+<a href="/"><img src="{$plugin.genf.sitelogo.sitelogo}" alt="Sul Zufühtechnik" class="ps-logo"></a>
+)

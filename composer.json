@@ -1,0 +1,24 @@
+{
+    "name": "mindbuilding/genf2026",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "homepage": "https://mindbuilding.de",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+        "typo3/cms-core": "^13.4",
+        "typo3/cms-fluid-styled-content": "^13.4",
+        "typo3/cms-rte-ckeditor": "^13.4",
+        "b13/container": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mindbuilding\\Genf\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "genf2026"
+        }
+    }
+}

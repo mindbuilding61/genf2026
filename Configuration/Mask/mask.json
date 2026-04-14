@@ -1,0 +1,729 @@
+{
+    "version": "8.1.0",
+    "restructuringDone": false,
+    "tables": {
+        "tt_content": {
+            "elements": {
+                "bild_mit_berschrift_und_text": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "header",
+                        "image",
+                        "bodytext"
+                    ],
+                    "columnsOverride": {
+                        "bodytext": {
+                            "config": {
+                                "enableRichtext": 1,
+                                "richtextConfiguration": "genf2026"
+                            },
+                            "fullKey": "bodytext",
+                            "key": "bodytext",
+                            "type": "richtext"
+                        },
+                        "image": {
+                            "config": {
+                                "appearance": {
+                                    "elementBrowserEnabled": 1,
+                                    "enabledControls": {
+                                        "delete": 1,
+                                        "dragdrop": 1,
+                                        "hide": 1,
+                                        "info": 1,
+                                        "localize": 1,
+                                        "sort": 1
+                                    },
+                                    "expandSingle": 1,
+                                    "fileUploadAllowed": 1,
+                                    "useSortable": 1
+                                },
+                                "minitems": ""
+                            },
+                            "fullKey": "image",
+                            "imageoverlayPalette": 1,
+                            "key": "image",
+                            "type": "file"
+                        }
+                    },
+                    "description": "",
+                    "descriptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "bild_mit_berschrift_und_text",
+                    "label": "Bild mit \u00dcberschrift und Text",
+                    "labels": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "bild_und_text_quadratisch": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_bild"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "Bildelement"
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "bild_und_text_quadratisch",
+                    "label": "Bild und Text quadratisch",
+                    "labels": [
+                        "Bildelemenent"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "button": {
+                    "color": "#769ac9",
+                    "colorOverlay": "#769ac9",
+                    "columns": [
+                        "tx_mask_link",
+                        "tx_mask_linkname"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "",
+                        "Hier den Text eingeben"
+                    ],
+                    "icon": "fa-anchor",
+                    "iconOverlay": "fa-anchor",
+                    "key": "button",
+                    "label": "button",
+                    "labels": [
+                        "Verlinkung",
+                        ""
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "quadratelement": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_quadratelement",
+                        "tx_mask_kontaktlink"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "Bild",
+                        "Link zur Kontaktseite"
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "quadratelement",
+                    "label": "Quadratelement",
+                    "labels": [
+                        "Bild",
+                        "Link"
+                    ],
+                    "saveAndClose": 1,
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "zweibilder": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_linkes_bild"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "zweibilder",
+                    "label": "zweibilder",
+                    "labels": [
+                        ""
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "zweier": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_zweier"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "Zweier"
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "zweier",
+                    "label": "zweier",
+                    "labels": [
+                        "Zweier"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 1
+                },
+                "zweiertext": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_zweiertext"
+                    ],
+                    "description": "zweiertext",
+                    "descriptions": [
+                        "Zweiertext"
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "zweiertext",
+                    "label": "zweiertext",
+                    "labels": [
+                        ""
+                    ],
+                    "saveAndClose": 1,
+                    "shortLabel": "zweiertext",
+                    "sorting": 3
+                },
+                "zweiineins": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_zweiineinsblock"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "tx_mask_zweiineinsblock"
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "zweiineins",
+                    "label": "zweiineins",
+                    "labels": [
+                        "tx_mask_zweiineinsblock"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 2
+                }
+            },
+            "sql": {
+                "tx_mask_bild": {
+                    "tt_content": {
+                        "tx_mask_bild": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_kontaktlink": {
+                    "tt_content": {
+                        "tx_mask_kontaktlink": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_link": {
+                    "tt_content": {
+                        "tx_mask_link": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_linkes_bild": {
+                    "tt_content": {
+                        "tx_mask_linkes_bild": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_linkname": {
+                    "tt_content": {
+                        "tx_mask_linkname": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_quadratelement": {
+                    "tt_content": {
+                        "tx_mask_quadratelement": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_zweier": {
+                    "tt_content": {
+                        "tx_mask_zweier": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_zweiertext": {
+                    "tt_content": {
+                        "tx_mask_zweiertext": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_zweiineinsblock": {
+                    "tt_content": {
+                        "tx_mask_zweiineinsblock": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "bodytext": {
+                    "bodytextTypeByElement": {
+                        "bild_mit_berschrift_und_text": "richtext"
+                    },
+                    "coreField": 1,
+                    "fullKey": "bodytext",
+                    "key": "bodytext"
+                },
+                "header": {
+                    "coreField": 1,
+                    "fullKey": "header",
+                    "key": "header",
+                    "type": "string"
+                },
+                "image": {
+                    "coreField": 1,
+                    "fullKey": "image",
+                    "imageoverlayPalette": 1,
+                    "key": "image",
+                    "type": "file"
+                },
+                "tx_mask_bild": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "type": "inline"
+                    },
+                    "ctrl": {
+                        "label": "Bildelement"
+                    },
+                    "fullKey": "tx_mask_bild",
+                    "key": "bild",
+                    "type": "inline"
+                },
+                "tx_mask_kontaktlink": {
+                    "config": {
+                        "nullable": 0,
+                        "placeholder": "Link",
+                        "size": "30",
+                        "type": "link"
+                    },
+                    "fullKey": "tx_mask_kontaktlink",
+                    "key": "kontaktlink",
+                    "type": "link"
+                },
+                "tx_mask_link": {
+                    "config": {
+                        "allowedTypes": [
+                            "page"
+                        ],
+                        "nullable": 0,
+                        "placeholder": "Verlinkung",
+                        "type": "link"
+                    },
+                    "fullKey": "tx_mask_link",
+                    "key": "link",
+                    "type": "link"
+                },
+                "tx_mask_linkes_bild": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_linkes_bild",
+                    "key": "linkes_bild",
+                    "type": "inline"
+                },
+                "tx_mask_linkname": {
+                    "config": {
+                        "nullable": 0,
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_linkname",
+                    "key": "linkname",
+                    "type": "string"
+                },
+                "tx_mask_quadratelement": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "minitems": ""
+                    },
+                    "fullKey": "tx_mask_quadratelement",
+                    "imageoverlayPalette": 1,
+                    "key": "quadratelement",
+                    "type": "file"
+                },
+                "tx_mask_zweier": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_zweier",
+                    "key": "zweier",
+                    "type": "inline"
+                },
+                "tx_mask_zweiertext": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "type": "inline"
+                    },
+                    "ctrl": {
+                        "label": "Zweiertext"
+                    },
+                    "fullKey": "tx_mask_zweiertext",
+                    "key": "zweiertext",
+                    "type": "inline"
+                },
+                "tx_mask_zweiineinsblock": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_zweiineinsblock",
+                    "key": "zweiineinsblock",
+                    "type": "inline"
+                }
+            }
+        },
+        "tx_mask_bild": {
+            "sql": {
+                "tx_mask_bild": {
+                    "tx_mask_bild": {
+                        "tx_mask_bild": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_text": {
+                    "tx_mask_bild": {
+                        "tx_mask_text": "mediumtext"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_bild": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "minitems": ""
+                    },
+                    "description": "Bild",
+                    "fullKey": "tx_mask_bild",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_bild",
+                    "key": "bild",
+                    "label": "Bild",
+                    "order": 1,
+                    "type": "file"
+                },
+                "tx_mask_text": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "richtextConfiguration": "genf2026",
+                        "type": "text"
+                    },
+                    "description": "Text",
+                    "fullKey": "tx_mask_text",
+                    "inlineParent": "tx_mask_bild",
+                    "key": "text",
+                    "label": "Text",
+                    "order": 2,
+                    "type": "richtext"
+                }
+            }
+        },
+        "tx_mask_linkes_bild": {
+            "sql": {
+                "tx_mask_bild_links": {
+                    "tx_mask_linkes_bild": {
+                        "tx_mask_bild_links": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_rechtes_bild": {
+                    "tx_mask_linkes_bild": {
+                        "tx_mask_rechtes_bild": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_bild_links": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "minitems": ""
+                    },
+                    "description": "Linkes Bild",
+                    "fullKey": "tx_mask_bild_links",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_linkes_bild",
+                    "key": "bild_links",
+                    "label": "Linkes Bild",
+                    "order": 1,
+                    "type": "file"
+                },
+                "tx_mask_rechtes_bild": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "minitems": ""
+                    },
+                    "description": "Rechtes Bild",
+                    "fullKey": "tx_mask_rechtes_bild",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_linkes_bild",
+                    "key": "rechtes_bild",
+                    "label": "Rechtes Bild",
+                    "order": 2,
+                    "type": "file"
+                }
+            }
+        },
+        "tx_mask_zweier": {
+            "sql": {
+                "tx_mask_linkesbild": {
+                    "tx_mask_zweier": {
+                        "tx_mask_linkesbild": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_rechtesbild": {
+                    "tx_mask_zweier": {
+                        "tx_mask_rechtesbild": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_linkesbild": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "minitems": ""
+                    },
+                    "description": "Linkes Bild",
+                    "fullKey": "tx_mask_linkesbild",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_zweier",
+                    "key": "linkesbild",
+                    "label": "Linkes Bild",
+                    "order": 1,
+                    "type": "file"
+                },
+                "tx_mask_rechtesbild": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "minitems": ""
+                    },
+                    "description": "Rechtes Bild",
+                    "fullKey": "tx_mask_rechtesbild",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_zweier",
+                    "key": "rechtesbild",
+                    "label": "Rechtes Bild",
+                    "order": 2,
+                    "type": "file"
+                }
+            }
+        },
+        "tx_mask_zweiertext": {
+            "sql": {
+                "tx_mask_zweiertext_inhelt": {
+                    "tx_mask_zweiertext": {
+                        "tx_mask_zweiertext_inhelt": "mediumtext"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_zweiertext_inhelt": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "type": "text"
+                    },
+                    "description": "Inhalt Text",
+                    "fullKey": "tx_mask_zweiertext_inhelt",
+                    "inlineParent": "tx_mask_zweiertext",
+                    "key": "zweiertext_inhelt",
+                    "label": "Inhalt Text",
+                    "order": 1,
+                    "type": "richtext"
+                }
+            }
+        },
+        "tx_mask_zweiineinsblock": {
+            "sql": {
+                "tx_mask_zweineinstext": {
+                    "tx_mask_zweiineinsblock": {
+                        "tx_mask_zweineinstext": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_zweineinstext": {
+                    "config": {
+                        "nullable": 0,
+                        "type": "input"
+                    },
+                    "description": "Text nebeneinander",
+                    "fullKey": "tx_mask_zweineinstext",
+                    "inlineParent": "tx_mask_zweiineinsblock",
+                    "key": "zweineinstext",
+                    "label": "Text nebeneinander",
+                    "order": 1,
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
