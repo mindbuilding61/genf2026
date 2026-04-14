@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file source-language="en" datatype="plaintext" original="messages" date="2026-04-14T00:00:00Z" product-name="genf2026">
+        <header/>
+        <body>
+            <trans-unit id="label">
+                <source>Genf 2026</source>
+            </trans-unit>
+
+            <trans-unit id="categories.genf">
+                <source>Genf</source>
+            </trans-unit>
+            <trans-unit id="categories.genf.general">
+                <source>General</source>
+            </trans-unit>
+            <trans-unit id="categories.genf.logo">
+                <source>Logo</source>
+            </trans-unit>
+            <trans-unit id="categories.genf.fonts">
+                <source>Fonts and Colors</source>
+            </trans-unit>
+
+            <trans-unit id="settings.plugin.genf.vorgaben.footerContentId">
+                <source>Footer page ID</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.genf.vorgaben.searchId">
+                <source>Search page ID</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.genf.vorgaben.favicon">
+                <source>Favicon path</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.genf.navigation.navclass">
+                <source>Navigation mode</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.genf.sitelogo.sitelogo">
+                <source>Logo path</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.genf.sitelogo.siteLogoWidth">
+                <source>Logo width</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.genf.sitelogo.siteTitle">
+                <source>Site title</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.genf.sitelogo.abstand">
+                <source>Top spacing</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.genf.fonts.primarycolor">
+                <source>Primary text color</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.genf.fonts.fontfamily">
+                <source>Base font family</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.genf.fonts.fontsize">
+                <source>Base font size</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.genf.fonts.family1">
+                <source>H1 font family</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.genf.fonts.fontSizeH1">
+                <source>H1 font size</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.genf.fonts.primarycolorh1">
+                <source>H1 color</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.genf.fonts.family2">
+                <source>H2 font family</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.genf.fonts.fontSizeH2">
+                <source>H2 font size</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.genf.fonts.primarycolorh2">
+                <source>H2 color</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.genf.fonts.family3">
+                <source>H3 font family</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.genf.fonts.primarycolorh3">
+                <source>H3 color</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.genf.fonts.family4">
+                <source>H4 font family</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.genf.fonts.primarycolorh4">
+                <source>H4 color</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

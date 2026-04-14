@@ -1,0 +1,68 @@
+plugin:
+  genf:
+    accordion:
+      accordioncolor: ''
+      accordioncolorueberschrift: ''
+    bereiche:
+      containerclass: Schmal
+      containerclass2: Schmal
+      containerclass3: Schmal
+      containerclasscolor: ''
+      containerclasscolor2: ''
+      containerclasscolor3: ''
+      containerclasspadding: 1rem 0px
+      containerclasspadding2: 1rem 0px
+      containerclasspadding3: 1rem 0px
+    button:
+      buttoncolor: ''
+      buttonmargin: ''
+      buttonpadding: ''
+      buttonradius: ''
+      buttonschriftfarbe: ''
+      buttonwidth: ''
+    fonts:
+      family1: ''
+      family2: ''
+      family3: ''
+      family4: ''
+      fontSizeH1: 2rem
+      fontSizeH2: 1.7rem
+      fontfamily: Raleway
+      fontsize: ''
+      primarycolor: '#a1a1a1;'
+      primarycolorh1: ''
+      primarycolorh2: ''
+      primarycolorh3: ''
+      primarycolorh4: ''
+    footer:
+      footerLinks: '#a1a1a1;'
+      footerfarbe: ''
+      footerfarbe2: ''
+      footerrand: ''
+      footerrandbreite: ''
+      footerschriftoben: ''
+      footerschriftunten: ''
+    navigation:
+      bordernavbar: '2px solid #a1a1a1'
+      navclass: Fixed
+    sitelogo:
+      abstand: 0
+      siteLogoWidth: 200
+      siteTitle: IWA Maschinenbau
+      sitelogo: 'EXT:genf2026/Resources/Public/Images/logo_iwa.png'
+    slider:
+      sliderhoehe: 324px
+    sprachauswahl:
+      sprachauswahl: Ohne
+    suchauswahl:
+      suchauswahl: Ohne
+    trenner:
+      abstandtrenneroben: ''
+      abstandtrennerunten: ''
+      farbeTrenner: '#a1a1a1;'
+      hoehetrenner: ''
+    vorgaben:
+      burgerfarbe: ''
+      favicon: 'EXT:genf2026/Resources/Public/Icons/favicon.ico'
+      footerContentId: 6
+      searchId: 118

@@ -1,0 +1,365 @@
+categories:
+  genf:
+    label: Genf
+  genf.accordion:
+    parent: genf
+    label: Accordion
+  genf.bereiche:
+    parent: genf
+    label: Bereiche
+  genf.button:
+    parent: genf
+    label: Buttons
+  genf.fonts:
+    parent: genf
+    label: Schriften und Farben
+  genf.footer:
+    parent: genf
+    label: Footer
+  genf.navigation:
+    parent: genf
+    label: Navigation
+  genf.sitelogo:
+    parent: genf
+    label: Logo
+  genf.slider:
+    parent: genf
+    label: Slider
+  genf.sprachauswahl:
+    parent: genf
+    label: Sprachauswahl
+  genf.suchauswahl:
+    parent: genf
+    label: Suche
+  genf.trenner:
+    parent: genf
+    label: Trenner
+  genf.vorgaben:
+    parent: genf
+    label: Grundwerte
+
+settings:
+  plugin.genf.accordion.accordioncolor:
+    label: 'Accordioncolor'
+    default: '#a1a1a1'
+    type: color
+    category: genf.accordion
+  plugin.genf.accordion.accordioncolorueberschrift:
+    label: 'Accordioncolorueberschrift'
+    default: '#a1a1a1'
+    type: color
+    category: genf.accordion
+  plugin.genf.bereiche.containerclass:
+    label: 'Containerclass'
+    default: 'Schmal'
+    type: string
+    category: genf.bereiche
+  plugin.genf.bereiche.containerclass2:
+    label: 'Containerclass2'
+    default: 'Schmal'
+    type: string
+    category: genf.bereiche
+  plugin.genf.bereiche.containerclass3:
+    label: 'Containerclass3'
+    default: 'Schmal'
+    type: string
+    category: genf.bereiche
+  plugin.genf.bereiche.containerclasscolor:
+    label: 'Containerclasscolor'
+    default: '#a1a1a1'
+    type: color
+    category: genf.bereiche
+  plugin.genf.bereiche.containerclasscolor2:
+    label: 'Containerclasscolor2'
+    default: '#a1a1a1'
+    type: color
+    category: genf.bereiche
+  plugin.genf.bereiche.containerclasscolor3:
+    label: 'Containerclasscolor3'
+    default: '#a1a1a1'
+    type: color
+    category: genf.bereiche
+  plugin.genf.bereiche.containerclasspadding:
+    label: 'Containerclasspadding'
+    default: '1rem 0px'
+    type: string
+    category: genf.bereiche
+  plugin.genf.bereiche.containerclasspadding2:
+    label: 'Containerclasspadding2'
+    default: '1rem 0px'
+    type: string
+    category: genf.bereiche
+  plugin.genf.bereiche.containerclasspadding3:
+    label: 'Containerclasspadding3'
+    default: '1rem 0px'
+    type: string
+    category: genf.bereiche
+  plugin.genf.button.buttoncolor:
+    label: 'Buttoncolor'
+    default: '#a1a1a1'
+    type: color
+    category: genf.button
+  plugin.genf.button.buttonmargin:
+    label: 'Buttonmargin'
+    default: ''
+    type: string
+    category: genf.button
+  plugin.genf.button.buttonpadding:
+    label: 'Buttonpadding'
+    default: ''
+    type: string
+    category: genf.button
+  plugin.genf.button.buttonradius:
+    label: 'Buttonradius'
+    default: ''
+    type: string
+    category: genf.button
+  plugin.genf.button.buttonschriftfarbe:
+    label: 'Buttonschriftfarbe'
+    default: '#a1a1a1'
+    type: color
+    category: genf.button
+  plugin.genf.button.buttonwidth:
+    label: 'Buttonwidth'
+    default: ''
+    type: string
+    category: genf.button
+  plugin.genf.fonts.fontfamily:
+    label: 'Standardschriftfamilie'
+    default: 'Raleway'
+    type: string
+    enum:
+      Raleway: Raleway
+      'Roboto Serif': Roboto Serif
+      'EB Garamond': EB Garamond
+      Montserrat: Montserrat
+      'Open Sans': Open Sans
+      Roboto: Roboto
+      'Spline Sans': Spline Sans
+      Hind: Hind
+      Spectral: Spectral
+    category: genf.fonts
+  plugin.genf.fonts.fontsize:
+    label: 'Standard-Schriftgröße'
+    default: ''
+    type: string
+    category: genf.fonts
+  plugin.genf.fonts.primarycolor:
+    label: 'Standard-Schriftfarbe'
+    default: '#a1a1a1'
+    type: color
+    category: genf.fonts
+  plugin.genf.fonts.family1:
+    label: 'Schriftfamilie H1'
+    default: ''
+    type: string
+    enum:
+      '': Default
+      Raleway: Raleway
+      'Roboto Serif': Roboto Serif
+      'EB Garamond': EB Garamond
+      Montserrat: Montserrat
+      'Open Sans': Open Sans
+      Roboto: Roboto
+      'Spline Sans': Spline Sans
+      Hind: Hind
+      Spectral: Spectral
+    category: genf.fonts
+  plugin.genf.fonts.fontSizeH1:
+    label: 'Schriftgröße H1'
+    default: '2rem'
+    type: string
+    category: genf.fonts
+  plugin.genf.fonts.primarycolorh1:
+    label: 'Schriftfarbe H1'
+    default: '#a1a1a1'
+    type: color
+    category: genf.fonts
+  plugin.genf.fonts.family2:
+    label: 'Schriftfamilie H2'
+    default: ''
+    type: string
+    enum:
+      '': Default
+      Raleway: Raleway
+      'Roboto Serif': Roboto Serif
+      'EB Garamond': EB Garamond
+      Montserrat: Montserrat
+      'Open Sans': Open Sans
+      Roboto: Roboto
+      'Spline Sans': Spline Sans
+      Hind: Hind
+      Spectral: Spectral
+    category: genf.fonts
+  plugin.genf.fonts.fontSizeH2:
+    label: 'Schriftgröße H2'
+    default: '1.7rem'
+    type: string
+    category: genf.fonts
+  plugin.genf.fonts.primarycolorh2:
+    label: 'Schriftfarbe H2'
+    default: '#a1a1a1'
+    type: color
+    category: genf.fonts
+  plugin.genf.fonts.family3:
+    label: 'Schriftfamilie H3'
+    default: ''
+    type: string
+    enum:
+      '': Default
+      Raleway: Raleway
+      'Roboto Serif': Roboto Serif
+      'EB Garamond': EB Garamond
+      Montserrat: Montserrat
+      'Open Sans': Open Sans
+      Roboto: Roboto
+      'Spline Sans': Spline Sans
+      Hind: Hind
+      Spectral: Spectral
+    category: genf.fonts
+  plugin.genf.fonts.primarycolorh3:
+    label: 'Schriftfarbe H3'
+    default: '#a1a1a1'
+    type: color
+    category: genf.fonts
+  plugin.genf.fonts.family4:
+    label: 'Schriftfamilie H4'
+    default: ''
+    type: string
+    enum:
+      '': Default
+      Raleway: Raleway
+      'Roboto Serif': Roboto Serif
+      'EB Garamond': EB Garamond
+      Montserrat: Montserrat
+      'Open Sans': Open Sans
+      Roboto: Roboto
+      'Spline Sans': Spline Sans
+      Hind: Hind
+      Spectral: Spectral
+    category: genf.fonts
+  plugin.genf.fonts.primarycolorh4:
+    label: 'Schriftfarbe H4'
+    default: '#a1a1a1'
+    type: color
+    category: genf.fonts
+  plugin.genf.footer.footerLinks:
+    label: 'Footer Links'
+    default: '#a1a1a1'
+    type: color
+    category: genf.footer
+  plugin.genf.footer.footerfarbe:
+    label: 'Footerfarbe'
+    default: '#a1a1a1'
+    type: color
+    category: genf.footer
+  plugin.genf.footer.footerfarbe2:
+    label: 'Footerfarbe2'
+    default: '#a1a1a1'
+    type: color
+    category: genf.footer
+  plugin.genf.footer.footerrand:
+    label: 'Footerrand'
+    default: '#a1a1a1'
+    type: color
+    category: genf.footer
+  plugin.genf.footer.footerrandbreite:
+    label: 'Footerrandbreite'
+    default: ''
+    type: string
+    category: genf.footer
+  plugin.genf.footer.footerschriftoben:
+    label: 'Footerschriftoben'
+    default: '#a1a1a1'
+    type: color
+    category: genf.footer
+  plugin.genf.footer.footerschriftunten:
+    label: 'Footerschriftunten'
+    default: '#a1a1a1'
+    type: color
+    category: genf.footer
+  plugin.genf.navigation.bordernavbar:
+    label: 'Bordernavbar'
+    default: '2px solid #a1a1a1'
+    type: string
+    category: genf.navigation
+  plugin.genf.navigation.navclass:
+    label: 'Navclass'
+    default: 'Fixed'
+    type: string
+    category: genf.navigation
+  plugin.genf.sitelogo.abstand:
+    label: 'Abstand'
+    default: '0'
+    type: string
+    category: genf.sitelogo
+  plugin.genf.sitelogo.siteLogoWidth:
+    label: 'Site Logo Width'
+    default: '200'
+    type: string
+    category: genf.sitelogo
+  plugin.genf.sitelogo.siteTitle:
+    label: 'Site Title'
+    default: 'IWA Maschinenbau'
+    type: string
+    category: genf.sitelogo
+  plugin.genf.sitelogo.sitelogo:
+    label: 'Sitelogo'
+    default: 'EXT:genf2026/Resources/Public/Images/logo_iwa.png'
+    type: string
+    category: genf.sitelogo
+  plugin.genf.slider.sliderhoehe:
+    label: 'Sliderhoehe'
+    default: '324px'
+    type: string
+    category: genf.slider
+  plugin.genf.sprachauswahl.sprachauswahl:
+    label: 'Sprachauswahl'
+    default: 'Ohne'
+    type: string
+    category: genf.sprachauswahl
+  plugin.genf.suchauswahl.suchauswahl:
+    label: 'Suchauswahl'
+    default: 'Ohne'
+    type: string
+    category: genf.suchauswahl
+  plugin.genf.trenner.abstandtrenneroben:
+    label: 'Abstandtrenneroben'
+    default: ''
+    type: string
+    category: genf.trenner
+  plugin.genf.trenner.abstandtrennerunten:
+    label: 'Abstandtrennerunten'
+    default: ''
+    type: string
+    category: genf.trenner
+  plugin.genf.trenner.farbeTrenner:
+    label: 'Farbe Trenner'
+    default: '#a1a1a1'
+    type: color
+    category: genf.trenner
+  plugin.genf.trenner.hoehetrenner:
+    label: 'Hoehetrenner'
+    default: ''
+    type: string
+    category: genf.trenner
+  plugin.genf.vorgaben.burgerfarbe:
+    label: 'Burgerfarbe'
+    default: '#a1a1a1'
+    type: color
+    category: genf.vorgaben
+  plugin.genf.vorgaben.favicon:
+    label: 'Favicon'
+    default: 'EXT:genf2026/Resources/Public/Icons/favicon.ico'
+    type: string
+    category: genf.vorgaben
+  plugin.genf.vorgaben.footerContentId:
+    label: 'Footer Content Id'
+    default: '6'
+    type: string
+    category: genf.vorgaben
+  plugin.genf.vorgaben.searchId:
+    label: 'Search Id'
+    default: '118'
+    type: string
+    category: genf.vorgaben

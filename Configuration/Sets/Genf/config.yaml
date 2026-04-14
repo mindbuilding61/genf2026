@@ -1,4 +1,5 @@
 name: mindbuilding/genf2026
 label: Genf
+labels: EXT:genf2026/Configuration/Sets/Genf/labels.xlf
 dependencies:
   - typo3/fluid-styled-content

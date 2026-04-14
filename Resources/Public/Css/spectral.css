@@ -1,4 +1,3 @@
-/* 1. Globale Einstellungen */
 /* spectral-200 - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -96,51 +95,4 @@
     font-style: italic;
     font-weight: 700;
     src: url('../fonts/spectral/spectral-v15-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-body {
-    font-family: 'Spectral', sans-serif;
-    font-weight: 100;           /* Normalgewicht für bessere Lesbarkeit */
-    font-style: normal;         /* Standard nicht kursiv */
-    font-size: 1rem;
-    line-height: 1.3;
-    /* Inter ist für UI optimiert, bei Fließtext ist -0.01em okay,
-       aber bei 400er Gewicht ist 0 oft sauberer */
-    letter-spacing: -0.01em;
-    font-kerning: normal;
-    font-feature-settings: "kern" 1, "ss01" 1; /* ss01 aktiviert bei Inter schönere Zeichenformen */
-    background-color: #ffffff;
-    color: #000000;
-    max-width: 750px;
-    margin: 60px auto;
-    padding: 0 25px;
-    text-rendering: optimizeLegibility;
-}
-
-/* 2. Der Roman-Text-Container */
-.roman-text {
-    font-weight: 100;           /* Hier dein gewünschter leichter Stil */
-    font-size: 1.3rem;         /* Etwas größer für entspanntes Lesen */
-    line-height: 1.5;           /* Mehr Zeilenabstand für "Roman-Feeling" */
-    text-align: justify;
-    hyphens: auto;
-    -webkit-hyphens: auto;
-
-    /* Optische Korrektur für Blocksatz */
-    text-justify: inter-word;
-    hyphenate-limit-chars: 6 3 3;
-}
-
-/* 3. Überschriften */
-h1, h2 {
-    font-weight: 600;
-    font-style: normal;
-    letter-spacing: -0.02em;    /* Headlines vertragen engeres Kerning */
-    margin-top: 2em;
-}
-
-/* 4. Betonungen im Roman */
-.roman-text em, .roman-text i {
-    font-style: italic;
-    font-weight: 300;           /* Damit Kursives nicht dicker wirkt */
 }
