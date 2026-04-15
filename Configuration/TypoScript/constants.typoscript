@@ -152,13 +152,13 @@ abstand = 0
         # cat=plugin.genf: fonts/105/190; type=color; label= Farbe der Standardschrift: Hier bitte die Farbe der Standardschrift auswählen:
         primarycolor = #a1a1a1;
 
-        # cat=plugin.genf: fonts/105/200;  type=options[  = "Raleway", Roboto serif = "Roboto Serif",  Garamond = "EB Garamond", Montserrat =  "Montserrat", Open sans =  "Open Sans", Roboto = "Roboto", Spline = "Spline Sans", Hind = "Hind", Spectral = "Spectral"]; label= Standardschrift: Standardschrift auswählen (Menue und Text):
+        # cat=plugin.genf: fonts/105/200;  type=options[  = "Raleway", Roboto serif = "Roboto Serif",Lora = "Lora", Garamond = "EB Garamond", Montserrat =  "Montserrat", Fraunces =  "Fraunces", Open sans =  "Open Sans", Roboto = "Roboto", Spline = "Spline Sans", Hind = "Hind", Spectral = "Spectral"]; label= Standardschrift: Standardschrift auswählen (Menue und Text):
         fontfamily = Raleway
 
         # cat=plugin.genf: fonts/105/210;  type=text; label= Größe der Standardschrift: Hier bitte die Größe der Standardschrift eintragen
         fontsize =
 
-        # cat=plugin.genf: fonts/105/220; type=options[Raleway = "Raleway", Roboto serif = "Roboto Serif", Open sans =  "Open Sans", Garamond = "EB Garamond", Montserrat =  "Montserrat", Roboto = "Roboto", Hind = "Hind", Spectral = "Spectral"];  label=Font H1
+        # cat=plugin.genf: fonts/105/220; type=options[Raleway = "Raleway", Roboto serif = "Roboto Serif",Lora = "Lora", Open sans =  "Open Sans", Garamond = "EB Garamond", Fraunces =  "Fraunces", Montserrat =  "Montserrat", Roboto = "Roboto", Hind = "Hind", Spectral = "Spectral"];  label=Font H1
         family1 =
 
         # cat=plugin.genf: fonts/105/221; type=text; label= Größe der H1: Hier bitte die Größe der H1 eintragen
@@ -167,7 +167,7 @@ abstand = 0
         # cat=plugin.genf: fonts/105/222; type=color; label= Farbe der H1: Hier bitte die Farbe der H1 eintragen
         primarycolorh1 =
 
-        # cat=plugin.genf: fonts/105/230; type=options[Raleway = "Raleway", Roboto serif = "Roboto Serif", Open sans =  "Open Sans", Garamond = "EB Garamond", Montserrat =  "Montserrat", Roboto = "Roboto", Hind = "Hind", Spectral = "Spectral"];  label=Font H2
+        # cat=plugin.genf: fonts/105/230; type=options[Raleway = "Raleway", Roboto serif = "Roboto Serif",Lora = "Lora", Open sans =  "Open Sans", Garamond = "EB Garamond", Fraunces =  "Fraunces", Montserrat =  "Montserrat", Roboto = "Roboto", Hind = "Hind", Spectral = "Spectral"];  label=Font H2
         family2 =
 
         # cat=plugin.genf: fonts/105/231; type=color; label= Farbe der H2: Hier bitte die Farbe der H2 eintragen
@@ -176,13 +176,13 @@ abstand = 0
         # cat=plugin.genf: fonts/105/232; type=text; label= Größe der H2: Hier bitte die Größe der H2 eintragen
         fontSizeH2 = 1.7rem
 
-        # cat=plugin.genf: fonts/105/240; type=options[Raleway = "Raleway", Roboto serif = "Roboto Serif", Open sans =  "Open Sans", Garamond = "EB Garamond", Montserrat =  "Montserrat", Roboto = "Roboto", Hind = "Hind", Spectral = "Spectral"];  label=Font H3
+        # cat=plugin.genf: fonts/105/240; type=options[Raleway = "Raleway", Roboto serif = "Roboto Serif",Lora = "Lora", Open sans =  "Open Sans", Garamond = "EB Garamond", Fraunces =  "Fraunces", Montserrat =  "Montserrat", Roboto = "Roboto", Hind = "Hind", Spectral = "Spectral"];  label=Font H3
         family3 =
 
         # cat=plugin.genf: fonts/105/241; type=color; label= Farbe der H3: Hier bitte die Farbe der H3 eintragen
         primarycolorh3 =
 
-        # cat=plugin.genf: fonts/105/250; type=options[Raleway = "Raleway", Roboto serif = "Roboto Serif", Open sans =  "Open Sans", Garamond = "EB Garamond", Montserrat =  "Montserrat", Roboto = "Roboto", Hind = "Hind", Spectral = "Spectral"]; label=Font H4
+        # cat=plugin.genf: fonts/105/250; type=options[Raleway = "Raleway", Roboto serif = "Roboto Serif", Lora = "Lora", Open sans =  "Open Sans", Garamond = "EB Garamond", Fraunces =  "Fraunces", Montserrat =  "Montserrat", Roboto = "Roboto", Hind = "Hind", Spectral = "Spectral"]; label=Font H4
         family4 =
 
         # cat=plugin.genf: fonts/105/251; type=color; label= Farbe der H4: Hier bitte die Farbe der H4 eintragen

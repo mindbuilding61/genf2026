@@ -1,8 +1,7 @@
-/* fontawesom-300 - latin */
+/* Use locally installed Font Awesome to avoid missing file requests. */
 @font-face {
-    font-family: 'Font Awesome 6 Free';
+    font-family: 'Font Awesome 5 Free';
     font-style: normal;
-    font-weight: 300;
-    url('../fonts/awesome/fa-regular-400.woff2') format('woff2'), 
-    url('../fonts/awesome/fa-regular-400.ttf') format('truetype'), 
+    font-weight: 400;
+    src: local('Font Awesome 5 Free');
 }

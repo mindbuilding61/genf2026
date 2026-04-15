@@ -134,6 +134,7 @@ settings:
       'EB Garamond': EB Garamond
       Montserrat: Montserrat
       'Open Sans': Open Sans
+      'Fraunces': Fraunces
       Roboto: Roboto
       'Spline Sans': Spline Sans
       Hind: Hind
@@ -164,6 +165,7 @@ settings:
       'Spline Sans': Spline Sans
       Hind: Hind
       Spectral: Spectral
+      Lora: Lora
     category: genf.fonts
   plugin.genf.fonts.fontSizeH1:
     label: 'Schriftgröße H1'
@@ -190,6 +192,7 @@ settings:
       'Spline Sans': Spline Sans
       Hind: Hind
       Spectral: Spectral
+      Lora: Lora
     category: genf.fonts
   plugin.genf.fonts.fontSizeH2:
     label: 'Schriftgröße H2'

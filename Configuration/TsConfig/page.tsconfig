@@ -26,7 +26,7 @@ TCEFORM.tt_content.layout {
 	removeItems = 0,1,2
 	addItems {
 		3 = Normal
-		4 = Grüner Rahmen
+		4 = Zitat
 		5 = Grauer Rahmen
 		6 = Roter Rahmen
 		7 = Oranger Rahmen
