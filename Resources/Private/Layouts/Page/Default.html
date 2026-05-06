@@ -4,39 +4,31 @@
 </div>
 <script>
   (function () {
-    function findFirstContentAfterMenu(menuWrapper) {
-      if (!menuWrapper) {
-        return null;
-      }
-      let candidate = menuWrapper.nextElementSibling;
-      while (candidate && candidate.tagName === 'SCRIPT') {
-        candidate = candidate.nextElementSibling;
-      }
-      return candidate;
-    }
-
+    /** Offset for Bootstrap fixed navbar: push page content down without relying on brittle “first sibling” markup. Also fixes anchors like #c1 under the sticky header (scroll-margin / scroll-padding). */
     function applyMenuOffset() {
-      const nav = document.querySelector('.navbar.fixed-top');
-      const menuWrapper = document.querySelector('.main');
-      const firstContent = findFirstContentAfterMenu(menuWrapper);
-      if (!firstContent) {
+      const nav = document.querySelector('nav.navbar.fixed-top');
+      const menuHeightRaw = nav ? nav.getBoundingClientRect().height : 0;
+      const menuHeight = Math.ceil(menuHeightRaw);
+
+      if (!nav || menuHeight <= 0) {
+        document.body.style.paddingTop = '';
+        document.documentElement.style.scrollPaddingTop = '';
+        document.documentElement.style.setProperty('--menuHeight', '');
         return;
       }
 
-      if (!nav) {
-        firstContent.style.marginTop = '';
-        return;
-      }
-
-      const menuHeight = Math.ceil(nav.getBoundingClientRect().height);
-      firstContent.style.marginTop = menuHeight > 0 ? menuHeight + 'px' : '';
-      document.documentElement.style.setProperty('--menuHeight', menuHeight + 'px');
+      const px = menuHeight + 'px';
+      document.body.style.paddingTop = px;
+      document.documentElement.style.scrollPaddingTop = px;
+      document.documentElement.style.setProperty('--menuHeight', px);
     }
 
+    window.addEventListener('DOMContentLoaded', applyMenuOffset);
     window.addEventListener('load', applyMenuOffset);
     window.addEventListener('resize', applyMenuOffset);
     window.setTimeout(applyMenuOffset, 50);
-    window.setTimeout(applyMenuOffset, 300);
+    window.setTimeout(applyMenuOffset, 400);
+    document.fonts && document.fonts.ready.then(applyMenuOffset).catch(function () {});
   })();
 </script>
     <div class="slider">
