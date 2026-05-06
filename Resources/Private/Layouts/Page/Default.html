@@ -2,6 +2,43 @@
 <div class="main">
     <f:render partial="Mainmenu" arguments="{_all}"/>
 </div>
+<script>
+  (function () {
+    function findFirstContentAfterMenu(menuWrapper) {
+      if (!menuWrapper) {
+        return null;
+      }
+      let candidate = menuWrapper.nextElementSibling;
+      while (candidate && candidate.tagName === 'SCRIPT') {
+        candidate = candidate.nextElementSibling;
+      }
+      return candidate;
+    }
+
+    function applyMenuOffset() {
+      const nav = document.querySelector('.navbar.fixed-top');
+      const menuWrapper = document.querySelector('.main');
+      const firstContent = findFirstContentAfterMenu(menuWrapper);
+      if (!firstContent) {
+        return;
+      }
+
+      if (!nav) {
+        firstContent.style.marginTop = '';
+        return;
+      }
+
+      const menuHeight = Math.ceil(nav.getBoundingClientRect().height);
+      firstContent.style.marginTop = menuHeight > 0 ? menuHeight + 'px' : '';
+      document.documentElement.style.setProperty('--menuHeight', menuHeight + 'px');
+    }
+
+    window.addEventListener('load', applyMenuOffset);
+    window.addEventListener('resize', applyMenuOffset);
+    window.setTimeout(applyMenuOffset, 50);
+    window.setTimeout(applyMenuOffset, 300);
+  })();
+</script>
     <div class="slider">
         <f:render section="Slider" />
     </div>
@@ -16,25 +53,6 @@
         <div class="sliderinhalt">
             <f:render section="sliderinhalt" />
         </div>
-    <script>
-        // Warte, bis die Seite vollständig geladen ist
-        window.onload = function() {
-            console.log("Seite geladen"); // Überprüfen, ob der Code ausgeführt wird
-
-            // Hole das Div-Element
-            var sliderunten = document.getElementById("sliderunten");
-            if (sliderunten) {
-                console.log("Div gefunden"); // Überprüfen, ob das Div-Element gefunden wurde
-                // Ermittele die Höhe des Divs
-                var hoehe = sliderunten.offsetHeight;
-                // Setze die Höhe in die CSS-Variable
-                document.documentElement.style.setProperty('--slideruntenheight', hoehe + 'px');
-                console.log("Die Höhe des Divs 'sliderunten' beträgt: " + hoehe + " Pixel");
-            } else {
-                console.log("Div 'sliderunten' nicht gefunden"); // Fehlerbehebung, falls das Div-Element nicht gefunden wird
-            }
-        };
-    </script>
     </div>
 
     <div class="mainunten">

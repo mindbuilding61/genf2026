@@ -34,7 +34,9 @@ modifiers = i
 }
 }
 }
-
+config {
+  linkVars := addToList(tx_texteladen[ce],tx_texteladen[page],tx_texteladen[debug])
+}
 
 ##############
 #### PAGE ####
@@ -169,7 +171,6 @@ special.value = {$plugin.genf.vorgaben.footerContentId}
 }
 }
 
-
 ########################
 # SETTINGS
 ########################
@@ -238,7 +239,6 @@ aos = EXT:genf2026/Resources/Public/JavaScript/Dist/aos.js
 }
 }
 
-
 ################
 #### CONFIG ####
 ################
@@ -293,7 +293,7 @@ Informationen unter https://mindbuilding.de
 absRefPrefix = auto
 uniqueLinkVars = 1
 pageTitleFirst = 1
-linkVars = L
+linkVars = L,tx_texteladen|ce,tx_texteladen|page,tx_texteladen|debug
 doctype = html5
 debug = 0
 cache_period = 86400
@@ -306,54 +306,55 @@ noScaleUp = 1
 # CSS Variablen (JS)
 ##########################################
 page.headerData.220 = TEXT
+page.headerData.220.insertData = 1
 page.headerData.220.value (
 <script>
-const baseFamily = '{$plugin.genf.fonts.fontfamily}';
-const family1 = '{$plugin.genf.fonts.family1}' || baseFamily;
-const family2 = '{$plugin.genf.fonts.family2}' || baseFamily;
-const family3 = '{$plugin.genf.fonts.family3}' || baseFamily;
-const family4 = '{$plugin.genf.fonts.family4}' || baseFamily;
+const baseFamily = '{site:settings.plugin.genf.fonts.fontfamily}';
+const family1 = '{site:settings.plugin.genf.fonts.family1}' || baseFamily;
+const family2 = '{site:settings.plugin.genf.fonts.family2}' || baseFamily;
+const family3 = '{site:settings.plugin.genf.fonts.family3}' || baseFamily;
+const family4 = '{site:settings.plugin.genf.fonts.family4}' || baseFamily;
 const quoteFamily = (font) => font.includes(' ') ? `"${font}"` : font;
-document.documentElement.style.setProperty('--primarycolor', '{$plugin.genf.fonts.primarycolor}');
-document.documentElement.style.setProperty('--fontsize', '{$plugin.genf.fonts.fontsize}');
+document.documentElement.style.setProperty('--primarycolor', '{site:settings.plugin.genf.fonts.primarycolor}');
+document.documentElement.style.setProperty('--fontsize', '{site:settings.plugin.genf.fonts.fontsize}');
 document.documentElement.style.setProperty('--fontfamily', quoteFamily(baseFamily));
 document.documentElement.style.setProperty('--family1', quoteFamily(family1));
 document.documentElement.style.setProperty('--family2', quoteFamily(family2));
 document.documentElement.style.setProperty('--family3', quoteFamily(family3));
 document.documentElement.style.setProperty('--family4', quoteFamily(family4));
-document.documentElement.style.setProperty('--fontSizeH1', '{$plugin.genf.fonts.fontSizeH1}');
-document.documentElement.style.setProperty('--fontSizeH2', '{$plugin.genf.fonts.fontSizeH2}');
-document.documentElement.style.setProperty('--primarycolorh1', '{$plugin.genf.fonts.primarycolorh1}');
-document.documentElement.style.setProperty('--primarycolorh2', '{$plugin.genf.fonts.primarycolorh2}');
-document.documentElement.style.setProperty('--primarycolorh3', '{$plugin.genf.fonts.primarycolorh3}');
-document.documentElement.style.setProperty('--primarycolorh4', '{$plugin.genf.fonts.primarycolorh4}');
-document.documentElement.style.setProperty('--footerfarbe', '{$plugin.genf.footer.footerfarbe}');
-document.documentElement.style.setProperty('--footerfarbe2', '{$plugin.genf.footer.footerfarbe2}');
-document.documentElement.style.setProperty('--footerschriftoben', '{$plugin.genf.footer.footerschriftoben}');
-document.documentElement.style.setProperty('--footerschriftunten', '{$plugin.genf.footer.footerschriftunten}');
-document.documentElement.style.setProperty('--footerlinks', '{$plugin.genf.footer.footerLinks}');
-document.documentElement.style.setProperty('--footerrand', '{$plugin.genf.footer.footerrand}');
-document.documentElement.style.setProperty('--footerrandbreite', '{$plugin.genf.footer.footerrandbreite}');
-document.documentElement.style.setProperty('--buttoncolor', '{$plugin.genf.button.buttoncolor}');
-document.documentElement.style.setProperty('--buttonschriftfarbe', '{$plugin.genf.button.buttonschriftfarbe}');
-document.documentElement.style.setProperty('--buttonmargin', '{$plugin.genf.button.buttonmargin}');
-document.documentElement.style.setProperty('--buttonradius', '{$plugin.genf.button.buttonradius}');
-document.documentElement.style.setProperty('--buttonpadding', '{$plugin.genf.button.buttonpadding}');
-document.documentElement.style.setProperty('--buttonwidth', '{$plugin.genf.button.buttonwidth}');
-document.documentElement.style.setProperty('--burgerfarbe', '{$plugin.genf.vorgaben.burgerfarbe}');
-document.documentElement.style.setProperty('--siteLogoWidth', '{$plugin.genf.sitelogo.siteLogoWidth}');
-document.documentElement.style.setProperty('--sliderhoehe', '{$plugin.genf.slider.sliderhoehe}');
-document.documentElement.style.setProperty('--farbeTrenner', '{$plugin.genf.trenner.farbeTrenner}');
-document.documentElement.style.setProperty('--hoehetrenner', '{$plugin.genf.trenner.hoehetrenner}');
-document.documentElement.style.setProperty('--abstandtrenneroben', '{$plugin.genf.trenner.abstandtrenneroben}');
-document.documentElement.style.setProperty('--abstandtrennerunten', '{$plugin.genf.trenner.abstandtrennerunten}');
-document.documentElement.style.setProperty('--containerclasscolor', '{$plugin.genf.bereiche.containerclasscolor}');
-document.documentElement.style.setProperty('--containerclasscolor2', '{$plugin.genf.bereiche.containerclasscolor2}');
-document.documentElement.style.setProperty('--containerclasscolor3', '{$plugin.genf.bereiche.containerclasscolor3}');
-document.documentElement.style.setProperty('--containerclasspadding', '{$plugin.genf.bereiche.containerclasspadding}');
-document.documentElement.style.setProperty('--containerclasspadding2', '{$plugin.genf.bereiche.containerclasspadding2}');
-document.documentElement.style.setProperty('--containerclasspadding3', '{$plugin.genf.bereiche.containerclasspadding3}');
-document.documentElement.style.setProperty('--accordioncolor', '{$plugin.genf.accordion.accordioncolor}');
-document.documentElement.style.setProperty('--accordioncolorueberschrift', '{$plugin.genf.accordion.accordioncolorueberschrift}');
+document.documentElement.style.setProperty('--fontSizeH1', '{site:settings.plugin.genf.fonts.fontSizeH1}');
+document.documentElement.style.setProperty('--fontSizeH2', '{site:settings.plugin.genf.fonts.fontSizeH2}');
+document.documentElement.style.setProperty('--primarycolorh1', '{site:settings.plugin.genf.fonts.primarycolorh1}');
+document.documentElement.style.setProperty('--primarycolorh2', '{site:settings.plugin.genf.fonts.primarycolorh2}');
+document.documentElement.style.setProperty('--primarycolorh3', '{site:settings.plugin.genf.fonts.primarycolorh3}');
+document.documentElement.style.setProperty('--primarycolorh4', '{site:settings.plugin.genf.fonts.primarycolorh4}');
+document.documentElement.style.setProperty('--footerfarbe', '{site:settings.plugin.genf.footer.footerfarbe}');
+document.documentElement.style.setProperty('--footerfarbe2', '{site:settings.plugin.genf.footer.footerfarbe2}');
+document.documentElement.style.setProperty('--footerschriftoben', '{site:settings.plugin.genf.footer.footerschriftoben}');
+document.documentElement.style.setProperty('--footerschriftunten', '{site:settings.plugin.genf.footer.footerschriftunten}');
+document.documentElement.style.setProperty('--footerlinks', '{site:settings.plugin.genf.footer.footerLinks}');
+document.documentElement.style.setProperty('--footerrand', '{site:settings.plugin.genf.footer.footerrand}');
+document.documentElement.style.setProperty('--footerrandbreite', '{site:settings.plugin.genf.footer.footerrandbreite}');
+document.documentElement.style.setProperty('--buttoncolor', '{site:settings.plugin.genf.button.buttoncolor}');
+document.documentElement.style.setProperty('--buttonschriftfarbe', '{site:settings.plugin.genf.button.buttonschriftfarbe}');
+document.documentElement.style.setProperty('--buttonmargin', '{site:settings.plugin.genf.button.buttonmargin}');
+document.documentElement.style.setProperty('--buttonradius', '{site:settings.plugin.genf.button.buttonradius}');
+document.documentElement.style.setProperty('--buttonpadding', '{site:settings.plugin.genf.button.buttonpadding}');
+document.documentElement.style.setProperty('--buttonwidth', '{site:settings.plugin.genf.button.buttonwidth}');
+document.documentElement.style.setProperty('--burgerfarbe', '{site:settings.plugin.genf.vorgaben.burgerfarbe}');
+document.documentElement.style.setProperty('--siteLogoWidth', '{site:settings.plugin.genf.sitelogo.siteLogoWidth}');
+document.documentElement.style.setProperty('--sliderhoehe', '{site:settings.plugin.genf.slider.sliderhoehe}');
+document.documentElement.style.setProperty('--farbeTrenner', '{site:settings.plugin.genf.trenner.farbeTrenner}');
+document.documentElement.style.setProperty('--hoehetrenner', '{site:settings.plugin.genf.trenner.hoehetrenner}');
+document.documentElement.style.setProperty('--abstandtrenneroben', '{site:settings.plugin.genf.trenner.abstandtrenneroben}');
+document.documentElement.style.setProperty('--abstandtrennerunten', '{site:settings.plugin.genf.trenner.abstandtrennerunten}');
+document.documentElement.style.setProperty('--containerclasscolor', '{site:settings.plugin.genf.bereiche.containerclasscolor}');
+document.documentElement.style.setProperty('--containerclasscolor2', '{site:settings.plugin.genf.bereiche.containerclasscolor2}');
+document.documentElement.style.setProperty('--containerclasscolor3', '{site:settings.plugin.genf.bereiche.containerclasscolor3}');
+document.documentElement.style.setProperty('--containerclasspadding', '{site:settings.plugin.genf.bereiche.containerclasspadding}');
+document.documentElement.style.setProperty('--containerclasspadding2', '{site:settings.plugin.genf.bereiche.containerclasspadding2}');
+document.documentElement.style.setProperty('--containerclasspadding3', '{site:settings.plugin.genf.bereiche.containerclasspadding3}');
+document.documentElement.style.setProperty('--accordioncolor', '{site:settings.plugin.genf.accordion.accordioncolor}');
+document.documentElement.style.setProperty('--accordioncolorueberschrift', '{site:settings.plugin.genf.accordion.accordioncolorueberschrift}');
 </script>
 )

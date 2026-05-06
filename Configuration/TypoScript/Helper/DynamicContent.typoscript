@@ -56,6 +56,12 @@ lib.dynamicContent {
             pidInList.data = register:pageUid
             pidInList.override.data = register:contentFromPid
         }
+        renderObj = CASE
+        renderObj {
+            key.field = CType
+            texteladen_text < tt_content.texteladen_text
+            default < tt_content
+        }
         stdWrap {
             dataWrap = {register:wrap}
             required = 1

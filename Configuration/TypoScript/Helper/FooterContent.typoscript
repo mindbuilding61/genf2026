@@ -5,7 +5,8 @@ lib.footerContent {
         table = tt_content
         select {
             # The page with ID = 123 is the source.
-            pidInList = {$plugin.genf.vorgaben.footerContentId}
+            pidInList = {site:settings.plugin.genf.vorgaben.footerContentId}
+            pidInList.insertData = 1
             # Sorting is the same as in the backend.
             orderBy = sorting
             # Select the content of all column.
