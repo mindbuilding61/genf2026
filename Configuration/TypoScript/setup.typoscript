@@ -239,6 +239,14 @@ aos = EXT:genf2026/Resources/Public/JavaScript/Dist/aos.js
 }
 }
 
+# texteladen: render with TYPO3 Default layout wrapper
+# so "Erscheinungsbild > Layout" becomes frame-layout-* classes.
+tt_content.texteladen_text {
+templateRootPaths {
+300 = EXT:genf2026/Resources/Private/Templates/Texteladen/
+}
+}
+
 ################
 #### CONFIG ####
 ################
