@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Mindbuilding\Genf\ViewHelper;
+namespace Mindbuilding\Genf\ViewHelpers;
 
 use Mindbuilding\Genf\Utility\LogoPathUtility;
 use TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper;
