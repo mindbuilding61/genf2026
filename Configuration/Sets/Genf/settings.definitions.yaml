@@ -337,7 +337,8 @@ settings:
     type: string
     category: genf.sitelogo
   plugin.genf.sitelogo.sitelogo:
-    label: 'Sitelogo'
+    label: 'Logo-Pfad'
+    description: 'z. B. fileadmin/logo/logo.png oder EXT:genf2026/Resources/Public/Images/logo.png'
     default: 'EXT:genf2026/Resources/Public/Images/logo_iwa.png'
     type: string
     category: genf.sitelogo

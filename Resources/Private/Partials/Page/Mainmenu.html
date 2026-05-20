@@ -1,4 +1,6 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:genf="http://typo3.org/ns/Mindbuilding/Genf/ViewHelpers"
+      data-namespace-typo3-fluid="true">
 <f:spaceless>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -20,7 +22,19 @@
         </div>
         <div class="container">
             <f:link.page pageUid="1" class="navbar-brand" title="{settings.siteTitle}">
-                <f:cObject typoscriptObjectPath="lib.logo" />
+                <f:if condition="{settings.sitelogo}">
+                    <f:then>
+                        <f:image
+                            src="{settings.sitelogo -> genf:normalizeLogoPath()}"
+                            alt="{settings.siteTitle}"
+                            class="img-fluid ps-logo"
+                            width="{settings.siteLogoWidth}"
+                        />
+                    </f:then>
+                    <f:else>
+                        <f:cObject typoscriptObjectPath="lib.logo" />
+                    </f:else>
+                </f:if>
             </f:link.page>
             <!--<a class="navbar-brand" href="#">Navbar</a>-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

@@ -175,7 +175,9 @@ special.value = {$plugin.genf.vorgaben.footerContentId}
 # SETTINGS
 ########################
 settings {
-siteLogo = EXT:genf2026/Resources/Public/Images/logo_iwa.png
+sitelogo = {$plugin.genf.sitelogo.sitelogo}
+siteLogo = {$plugin.genf.sitelogo.sitelogo}
+siteLogoWidth = {$plugin.genf.sitelogo.siteLogoWidth}
 siteTitle = {$plugin.genf.sitelogo.siteTitle}
 rootId = {$plugin.genf.vorgaben.rootId}
 searchId = {$plugin.genf.vorgaben.searchId}
