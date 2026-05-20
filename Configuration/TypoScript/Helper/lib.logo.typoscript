@@ -2,6 +2,6 @@
 lib.logo = TEXT
 lib.logo {
     insertData = 1
-    value = <img src="{site:settings.plugin.genf.sitelogo.sitelogo}" alt="{site:settings.plugin.genf.sitelogo.siteTitle}" class="ps-logo" width="{site:settings.plugin.genf.sitelogo.siteLogoWidth}" />
+    value = <img src="{site:settings.plugin.genf.sitelogo.sitelogo}" alt="{site:settings.plugin.genf.sitelogo.logoAlt}" class="ps-logo" width="{site:settings.plugin.genf.sitelogo.siteLogoWidth}" title="{site:settings.plugin.genf.sitelogo.siteTitle}" />
     stdWrap.htmlSpecialChars = 0
 }

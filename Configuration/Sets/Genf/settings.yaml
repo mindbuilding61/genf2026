@@ -52,6 +52,7 @@ plugin:
       navclass: Fixed
     sitelogo:
       abstand: 0
+      logoAlt: ''
       siteLogoWidth: 200
       siteTitle: IWA Maschinenbau
       sitelogo: 'EXT:genf2026/Resources/Public/Images/logo_iwa.png'

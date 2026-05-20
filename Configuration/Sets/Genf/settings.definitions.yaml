@@ -342,6 +342,12 @@ settings:
     default: 'EXT:genf2026/Resources/Public/Images/logo_iwa.png'
     type: string
     category: genf.sitelogo
+  plugin.genf.sitelogo.logoAlt:
+    label: 'Logo Alt-Text'
+    description: 'Alternativtext für das Logo (Barrierefreiheit). Leer = Seitentitel wird verwendet.'
+    default: ''
+    type: string
+    category: genf.sitelogo
   plugin.genf.slider.sliderhoehe:
     label: 'Sliderhoehe'
     default: '324px'

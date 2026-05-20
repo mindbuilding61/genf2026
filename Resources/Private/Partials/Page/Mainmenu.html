@@ -26,7 +26,7 @@
                     <f:then>
                         <f:image
                             src="{settings.sitelogo -> genf:normalizeLogoPath()}"
-                            alt="{settings.siteTitle}"
+                            alt="{f:if(condition: settings.logoAlt, then: settings.logoAlt, else: settings.siteTitle)}"
                             class="img-fluid ps-logo"
                             width="{settings.siteLogoWidth}"
                         />

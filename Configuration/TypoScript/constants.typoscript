@@ -104,7 +104,9 @@ sitelogo = EXT:genf2026/Resources/Public/Images/logo_iwa.png
 siteLogoWidth = 200
 # cat=plugin.genf: sitelogo/140/432; type=text; label= Titel der Seite: Hier bitte den Seitentitel eintragen
 siteTitle = IWA Maschinenbau
-# cat=plugin.genf: sitelogo/140/433; type=text; label= Abstand des sliders/ersten Textes nach oben: Abstand des sliders/ersten Textes nach oben
+# cat=plugin.genf: sitelogo/140/433; type=text; label= Logo Alt-Text: Alternativtext für das Logo (leer = Seitentitel)
+logoAlt =
+# cat=plugin.genf: sitelogo/140/434; type=text; label= Abstand des sliders/ersten Textes nach oben: Abstand des sliders/ersten Textes nach oben
 abstand = 0
 }
 

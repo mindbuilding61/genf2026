@@ -177,6 +177,7 @@ special.value = {$plugin.genf.vorgaben.footerContentId}
 settings {
 sitelogo = {$plugin.genf.sitelogo.sitelogo}
 siteLogo = {$plugin.genf.sitelogo.sitelogo}
+logoAlt = {$plugin.genf.sitelogo.logoAlt}
 siteLogoWidth = {$plugin.genf.sitelogo.siteLogoWidth}
 siteTitle = {$plugin.genf.sitelogo.siteTitle}
 rootId = {$plugin.genf.vorgaben.rootId}
