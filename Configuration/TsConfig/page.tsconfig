@@ -102,4 +102,4 @@ TCEMAIN.table.pages {
 # In v13 muss das Preset oft in der Extension Configuration registriert werden.
 # Der Aufruf hier bleibt bestehen, sofern das Preset "genf2026" in deiner
 # ext_localconf.php oder per YAML registriert wurde.
-	RTE.default.preset = genf2026
+RTE.default.preset = genf2026

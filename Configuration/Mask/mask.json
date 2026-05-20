@@ -689,6 +689,7 @@
                 "tx_mask_zweiertext_inhelt": {
                     "config": {
                         "enableRichtext": 1,
+                        "richtextConfiguration": "genf2026",
                         "type": "text"
                     },
                     "description": "Inhalt Text",

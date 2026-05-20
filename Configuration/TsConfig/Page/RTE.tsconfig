@@ -2,7 +2,7 @@
 #### RTE ####
 #############
 RTE {
-default {
-        preset = genf
+    default {
+        preset = genf2026
     }
 }
