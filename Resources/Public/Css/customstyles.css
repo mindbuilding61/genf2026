@@ -85,7 +85,7 @@ a.btn-blue {
     color: #fff;
     background: #2d58a4;
     border: 1px solid #2d58a4;
-    border-radius: 8px;
+    border-radius: 6px 8px;
     padding: 12px;
     text-decoration: none;
     display: inline-block;
