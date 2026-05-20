@@ -135,7 +135,9 @@ settings:
       Montserrat: Montserrat
       'Open Sans': Open Sans
       'Fraunces': Fraunces
+      'PT Serif': 'PT Serif'
       'Merriweather': Merriweather
+      Lora: Lora
       Roboto: Roboto
       'Spline Sans': Spline Sans
       Hind: Hind
@@ -173,6 +175,7 @@ settings:
       'Spline Sans': Spline Sans
       Hind: Hind
       Spectral: Spectral
+      'PT Serif': 'PT Serif'
       Merriweather: Merriweather
       Lora: Lora
     category: genf.fonts
@@ -207,6 +210,8 @@ settings:
       'Spline Sans': Spline Sans
       Hind: Hind
       Spectral: Spectral
+      'PT Serif': 'PT Serif'
+      Merriweather: Merriweather
       Lora: Lora
     category: genf.fonts
   plugin.genf.fonts.fontSizeH2:
@@ -240,6 +245,9 @@ settings:
       'Spline Sans': Spline Sans
       Hind: Hind
       Spectral: Spectral
+      'PT Serif': 'PT Serif'
+      Merriweather: Merriweather
+      Lora: Lora
     category: genf.fonts
   plugin.genf.fonts.lineHeightH3:
     label: 'Zeilenabstand H3'
@@ -267,6 +275,9 @@ settings:
       'Spline Sans': Spline Sans
       Hind: Hind
       Spectral: Spectral
+      'PT Serif': 'PT Serif'
+      Merriweather: Merriweather
+      Lora: Lora
     category: genf.fonts
   plugin.genf.fonts.lineHeightH4:
     label: 'Zeilenabstand H4'

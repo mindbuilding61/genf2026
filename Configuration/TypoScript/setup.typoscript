@@ -225,6 +225,7 @@ fontSplineSans = EXT:genf2026/Resources/Public/Css/spline.css
 fontHind = EXT:genf2026/Resources/Public/Css/hind.css
 fontSpectral = EXT:genf2026/Resources/Public/Css/spectral.css
 fontMerriweather = EXT:genf2026/Resources/Public/Css/merriweather.css
+fontPtserif = EXT:genf2026/Resources/Public/Css/ptserif.css
 }
 
 
