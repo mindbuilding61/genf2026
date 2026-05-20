@@ -64,6 +64,33 @@ body {
     margin-bottom: 0.5rem;
 }
 
+/* RTE styles (CKEditor 5 – class-based) */
+.marker-yellow {
+    background-color: #ffeb3b;
+}
+
+.marker-blue {
+    background-color: #90caf9;
+    color: #0d47a1;
+}
+
+h4.heading-blue {
+    color: #004289;
+    background: #fff;
+    padding-bottom: 1rem;
+    font-weight: 400;
+}
+
+a.btn-blue {
+    color: #fff;
+    background: #2d58a4;
+    border: 1px solid #2d58a4;
+    border-radius: 8px;
+    padding: 12px;
+    text-decoration: none;
+    display: inline-block;
+}
+
 .frame-layout-5 p{
     font-weight: 200;
     color: #000000;

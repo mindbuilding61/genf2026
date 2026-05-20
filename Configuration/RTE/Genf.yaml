@@ -1,72 +1,82 @@
-####
-# Example of what CKEditor can all bring
-###
+# RTE preset genf2026 (TYPO3 13 / CKEditor 5)
+# https://docs.typo3.org/c/typo3/cms-rte-ckeditor/main/en-us/Configuration/Reference.html
 
-# Load default processing options
-# Import basic configuration
 imports:
-  - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
-  - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
-  - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
+  - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Processing.yaml' }
+  - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml' }
+  - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml' }
 
-# Add configuration for the editor
-# For complete documentation see http://docs.ckeditor.com/#!/api/CKEDITOR.config
 editor:
   config:
-    contentsCss: "EXT:genf2026/Resources/Public/Css/rte.css"
-    stylesSet:
-      # block level styles
-      - { name: "H4 blau", element: "h4", styles: { color: "#004289", background: "white", padding-bottom: "1rem", font-weight: "400"} }
-      - { name: "Button blau", element: "a", styles: { color: "#ffffff", background: "#2D58A4", border: "1px solid #2D58A4", border-radius: "8px", padding: "12px" } }
-      - { name: "Quote / Citation", element: "blockquote" }
-      - { name: "Code block", element: "code" }
-      - { name: "Versuch", element: "a" }
-      # Inline styles
-      - { name: "Yellow marker", element: "span", styles: { background-color: "yellow" } }
+    contentsCss:
+      - 'EXT:rte_ckeditor/Resources/Public/Css/contents.css'
+      - 'EXT:genf2026/Resources/Public/Css/rte.css'
 
-    format_tags: "p;h1;h2;h3;h4;h5;pre"
+    toolbar:
+      items:
+        - style
+        - heading
+        - '|'
+        - bold
+        - italic
+        - subscript
+        - superscript
+        - softhyphen
+        - '|'
+        - bulletedList
+        - numberedList
+        - blockQuote
+        - alignment
+        - '|'
+        - findAndReplace
+        - link
+        - '|'
+        - removeFormat
+        - undo
+        - redo
+        - '|'
+        - insertTable
+        - '|'
+        - specialCharacters
+        - horizontalLine
+        - sourceEditing
 
-    toolbarGroups:
-      - { name: clipboard, groups: [clipboard, undo] }
-      - { name: editing,   groups: [find, selection, spellchecker] }
-      - { name: links }
-      - { name: insert }
-      - { name: tools }
-      - { name: table }
-      - { name: tabletools }
-      - { name: document,  groups: [ mode, document, doctools ] }
-      - { name: others }
-      - "/"
-      - { name: basicstyles, groups: [ basicstyles, align, cleanup ] }
-      - { name: paragraph,   groups: [ list, indent, blocks, align, bidi ] }
-      - { name: specialcharacters,   groups: [ insertcharacters ] }
-      - "/"
-      - { name: styles }
+    heading:
+      options:
+        - { model: 'paragraph', title: 'Paragraph' }
+        - { model: 'heading1', view: 'h1', title: 'Heading 1' }
+        - { model: 'heading2', view: 'h2', title: 'Heading 2' }
+        - { model: 'heading3', view: 'h3', title: 'Heading 3' }
+        - { model: 'heading4', view: 'h4', title: 'Heading 4' }
+        - { model: 'heading5', view: 'h5', title: 'Heading 5' }
+        - { model: 'formatted', view: 'pre', title: 'Pre-Formatted Text' }
 
-    justifyClasses:
-      - text-left
-      - text-center
-      - text-right
-      - text-justify
+    style:
+      definitions:
+        - { name: 'Yellow marker', element: 'span', classes: ['marker-yellow'] }
+        - { name: 'Blue marker', element: 'span', classes: ['marker-blue'] }
+        - { name: 'H4 blau', element: 'h4', classes: ['heading-blue'] }
+        - { name: 'Button blau', element: 'a', classes: ['btn-blue'] }
+        - { name: 'Quote / Citation', element: 'blockquote' }
+        - { name: 'Code block', element: 'code' }
 
-    extraPlugins:
-      - justify
-      - font
-      - find
-      - bidi
-      - selectall
-      - autolink
-      - wordcount
-      - colordialog
-      - image
-      - softhyphen
-      - pastetools
-      - preview
+    alignment:
+      options:
+        - { name: 'left', className: 'text-start' }
+        - { name: 'center', className: 'text-center' }
+        - { name: 'right', className: 'text-end' }
+        - { name: 'justify', className: 'text-justify' }
 
-    removePlugins: null
+    table:
+      defaultHeadings: { rows: 1 }
+      contentToolbar:
+        - tableColumn
+        - tableRow
+        - mergeTableCells
+        - tableProperties
+        - tableCellProperties
+        - toggleTableCaption
 
-
-# Allow s and u tag
 processing:
   allowTags:
     - s

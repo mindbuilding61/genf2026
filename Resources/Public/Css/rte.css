@@ -1,3 +1,42 @@
 /**
- * Created from sitepackagebuilder.com
+ * RTE editor + frontend styles for CKEditor 5 style presets (genf2026)
  */
+
+.marker-yellow {
+    background-color: #ffeb3b;
+}
+
+.marker-blue {
+    background-color: #90caf9;
+    color: #0d47a1;
+}
+
+h4.heading-blue {
+    color: #004289;
+    background: #fff;
+    padding-bottom: 1rem;
+    font-weight: 400;
+}
+
+a.btn-blue {
+    color: #fff;
+    background: #2d58a4;
+    border: 1px solid #2d58a4;
+    border-radius: 8px;
+    padding: 12px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 4px solid #dedede;
+    padding-left: 1rem;
+    margin: 1rem 0;
+}
+
+code {
+    font-family: monospace;
+    background: #f5f5f5;
+    padding: 0.1rem 0.3rem;
+}
