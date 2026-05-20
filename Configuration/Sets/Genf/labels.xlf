@@ -35,6 +35,9 @@
             <trans-unit id="settings.plugin.genf.sitelogo.sitelogo">
                 <source>Logo path</source>
             </trans-unit>
+            <trans-unit id="settings.plugin.genf.sitelogo.logoAlt">
+                <source>Logo alt text</source>
+            </trans-unit>
             <trans-unit id="settings.plugin.genf.sitelogo.siteLogoWidth">
                 <source>Logo width</source>
             </trans-unit>
