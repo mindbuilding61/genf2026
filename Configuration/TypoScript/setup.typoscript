@@ -359,7 +359,16 @@ document.documentElement.style.setProperty('--buttonradius', '{site:settings.plu
 document.documentElement.style.setProperty('--buttonpadding', '{site:settings.plugin.genf.button.buttonpadding}');
 document.documentElement.style.setProperty('--buttonwidth', '{site:settings.plugin.genf.button.buttonwidth}');
 document.documentElement.style.setProperty('--burgerfarbe', '{site:settings.plugin.genf.vorgaben.burgerfarbe}');
-document.documentElement.style.setProperty('--siteLogoWidth', '{site:settings.plugin.genf.sitelogo.siteLogoWidth}');
+(function () {
+  var logoWidth = '{site:settings.plugin.genf.sitelogo.siteLogoWidth}'.trim();
+  if (/^\d+$/.test(logoWidth)) {
+    logoWidth = logoWidth + 'px';
+  }
+  if (!logoWidth) {
+    logoWidth = '200px';
+  }
+  document.documentElement.style.setProperty('--siteLogoWidth', logoWidth);
+})();
 document.documentElement.style.setProperty('--sliderhoehe', '{site:settings.plugin.genf.slider.sliderhoehe}');
 document.documentElement.style.setProperty('--farbeTrenner', '{site:settings.plugin.genf.trenner.farbeTrenner}');
 document.documentElement.style.setProperty('--hoehetrenner', '{site:settings.plugin.genf.trenner.hoehetrenner}');

@@ -327,7 +327,8 @@ settings:
     type: string
     category: genf.sitelogo
   plugin.genf.sitelogo.siteLogoWidth:
-    label: 'Site Logo Width'
+    label: 'Logo-Breite'
+    description: 'Zahl in Pixel, z. B. 200 (oder 200px, 15rem)'
     default: '200'
     type: string
     category: genf.sitelogo

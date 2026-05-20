@@ -27,8 +27,9 @@
                         <f:image
                             src="{settings.sitelogo -> genf:normalizeLogoPath()}"
                             alt="{f:if(condition: settings.logoAlt, then: settings.logoAlt, else: settings.siteTitle)}"
-                            class="img-fluid ps-logo"
-                            width="{settings.siteLogoWidth}"
+                            class="ps-logo"
+                            width="{settings.siteLogoWidth -> genf:formatLogoWidth(pixelsOnly: 1)}"
+                            style="width: {settings.siteLogoWidth -> genf:formatLogoWidth()}; max-width: 100%; height: auto;"
                         />
                     </f:then>
                     <f:else>

@@ -85,7 +85,7 @@ a.btn-blue {
     color: #fff;
     background: #2d58a4;
     border: 1px solid #2d58a4;
-    border-radius: 6px 8px;
+    border-radius: 8px;
     padding: 12px;
     text-decoration: none;
     display: inline-block;
@@ -588,7 +588,9 @@ div.event-list-value.event-registration a:before{
 
 
 .ps-logo {
-    width: var(--siteLogoWidth);
+    width: var(--siteLogoWidth, 200px);
+    max-width: 100%;
+    height: auto;
 }
 
 .navbar-toggler-icon{
@@ -1271,7 +1273,9 @@ h5 {
 
 
         .ps-logo {
-            width: var(--siteLogoWidth);
+            width: var(--siteLogoWidth, 200px);
+            max-width: 100%;
+            height: auto;
         }
 
         .navbar-toggler-icon{

@@ -40,4 +40,34 @@ final class LogoPathUtility
 
         return $path;
     }
+
+    /**
+     * Normalizes logo width for CSS (e.g. "200" -> "200px").
+     */
+    public static function normalizeWidth(string $width, string $default = '200px'): string
+    {
+        $width = trim($width);
+        if ($width === '') {
+            return $default;
+        }
+
+        if (preg_match('#^\d+$#', $width) === 1) {
+            return $width . 'px';
+        }
+
+        return $width;
+    }
+
+    /**
+     * Returns pixel value for HTML width attribute on f:image.
+     */
+    public static function normalizeWidthPixels(string $width, int $default = 200): int
+    {
+        $width = trim($width);
+        if (preg_match('#^(\d+)#', $width, $matches) === 1) {
+            return max(1, (int)$matches[1]);
+        }
+
+        return $default;
+    }
 }
