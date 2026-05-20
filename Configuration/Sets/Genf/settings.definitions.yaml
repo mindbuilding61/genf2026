@@ -135,7 +135,7 @@ settings:
       Montserrat: Montserrat
       'Open Sans': Open Sans
       'Fraunces': Fraunces
-      'PT Serif': 'PT Serif'
+      'PT Serif': PT Serif
       'Merriweather': Merriweather
       Lora: Lora
       Roboto: Roboto
@@ -175,7 +175,7 @@ settings:
       'Spline Sans': Spline Sans
       Hind: Hind
       Spectral: Spectral
-      'PT Serif': 'PT Serif'
+      'PT Serif': PT Serif
       Merriweather: Merriweather
       Lora: Lora
     category: genf.fonts
@@ -204,13 +204,12 @@ settings:
       'Roboto Serif': Roboto Serif
       'EB Garamond': EB Garamond
       Montserrat: Montserrat
-      Merriweather: Merriweather
       'Open Sans': Open Sans
       Roboto: Roboto
       'Spline Sans': Spline Sans
       Hind: Hind
       Spectral: Spectral
-      'PT Serif': 'PT Serif'
+      'PT Serif': PT Serif
       Merriweather: Merriweather
       Lora: Lora
     category: genf.fonts
@@ -239,13 +238,12 @@ settings:
       'Roboto Serif': Roboto Serif
       'EB Garamond': EB Garamond
       Montserrat: Montserrat
-      Merriweather: Merriweather
       'Open Sans': Open Sans
       Roboto: Roboto
       'Spline Sans': Spline Sans
       Hind: Hind
       Spectral: Spectral
-      'PT Serif': 'PT Serif'
+      'PT Serif': PT Serif
       Merriweather: Merriweather
       Lora: Lora
     category: genf.fonts
@@ -268,14 +266,13 @@ settings:
       Raleway: Raleway
       'Roboto Serif': Roboto Serif
       'EB Garamond': EB Garamond
-      Merriweather: Merriweather
       Montserrat: Montserrat
       'Open Sans': Open Sans
       Roboto: Roboto
       'Spline Sans': Spline Sans
       Hind: Hind
       Spectral: Spectral
-      'PT Serif': 'PT Serif'
+      'PT Serif': PT Serif
       Merriweather: Merriweather
       Lora: Lora
     category: genf.fonts
