@@ -46,16 +46,7 @@ final class LogoPathUtility
      */
     public static function normalizeWidth(string $width, string $default = '200px'): string
     {
-        $width = trim($width);
-        if ($width === '') {
-            return $default;
-        }
-
-        if (preg_match('#^\d+$#', $width) === 1) {
-            return $width . 'px';
-        }
-
-        return $width;
+        return CssValueUtility::normalizePixelSize($width, $default);
     }
 
     /**

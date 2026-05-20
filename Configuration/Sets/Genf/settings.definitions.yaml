@@ -143,11 +143,13 @@ settings:
     category: genf.fonts
   plugin.genf.fonts.fontsize:
     label: 'Standard-Schriftgröße'
-    default: ''
+    description: 'z. B. 1.5rem oder 1.5 (ohne Leerzeichen vor rem/px)'
+    default: '1rem'
     type: string
     category: genf.fonts
   plugin.genf.fonts.lineheight:
     label: 'Standard-Zeilenabstand'
+    description: 'z. B. 1.5 oder 1.6rem'
     default: '1.3'
     type: string
     category: genf.fonts

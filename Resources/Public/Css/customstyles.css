@@ -719,10 +719,10 @@ div.button a {
     padding-top: 8rem;
 }
 
-ce-bodytext{
+.ce-bodytext{
     font-family: var(--fontfamily), Arial, sans-serif;
     font-weight: 400;
-    font-size: var(--fontsize);
+    font-size: var(--fontsize, 1rem);
     color: var(--primarycolor);
 }
 
@@ -996,7 +996,7 @@ h5 {
         body {
             font-family: var(--fontfamily), Arial, sans-serif;
             font-weight: 400;
-            font-size: var(--fontsize);
+            font-size: var(--fontsize, 1rem);
             color: var(--primarycolor);
         }
 
@@ -1381,10 +1381,10 @@ h5 {
             padding-top: 8rem;
         }
 
-        ce-bodytext{
+        .ce-bodytext{
             font-family: var(--fontfamily), Arial, sans-serif;
             font-weight: 400;
-            font-size: var(--fontsize);
+            font-size: var(--fontsize, 1rem);
             color: var(--primarycolor);
         }
 

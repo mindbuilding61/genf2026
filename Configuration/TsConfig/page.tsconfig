@@ -27,7 +27,7 @@ TCEFORM.tt_content.layout {
 	addItems {
 		3 = Normal
 		4 = Zitat
-		5 = Grauer Rahmen
+		5 = Perfekter Blocksatz
 		6 = Roter Rahmen
 		7 = Oranger Rahmen
 		8 = Blauer Rahmen

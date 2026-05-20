@@ -315,72 +315,9 @@ noScaleUp = 1
 
 
 ##########################################
-# CSS Variablen (JS)
+# CSS Variablen (:root, serverseitig)
 ##########################################
-page.headerData.220 = TEXT
-page.headerData.220.insertData = 1
-page.headerData.220.value (
-<script>
-const baseFamily = '{site:settings.plugin.genf.fonts.fontfamily}';
-const family1 = '{site:settings.plugin.genf.fonts.family1}' || baseFamily;
-const family2 = '{site:settings.plugin.genf.fonts.family2}' || baseFamily;
-const family3 = '{site:settings.plugin.genf.fonts.family3}' || baseFamily;
-const family4 = '{site:settings.plugin.genf.fonts.family4}' || baseFamily;
-const quoteFamily = (font) => font.includes(' ') ? `"${font}"` : font;
-document.documentElement.style.setProperty('--primarycolor', '{site:settings.plugin.genf.fonts.primarycolor}');
-document.documentElement.style.setProperty('--fontsize', '{site:settings.plugin.genf.fonts.fontsize}');
-document.documentElement.style.setProperty('--lineheight', '{site:settings.plugin.genf.fonts.lineheight}');
-document.documentElement.style.setProperty('--fontfamily', quoteFamily(baseFamily));
-document.documentElement.style.setProperty('--family1', quoteFamily(family1));
-document.documentElement.style.setProperty('--family2', quoteFamily(family2));
-document.documentElement.style.setProperty('--family3', quoteFamily(family3));
-document.documentElement.style.setProperty('--family4', quoteFamily(family4));
-document.documentElement.style.setProperty('--fontSizeH1', '{site:settings.plugin.genf.fonts.fontSizeH1}');
-document.documentElement.style.setProperty('--fontSizeH2', '{site:settings.plugin.genf.fonts.fontSizeH2}');
-document.documentElement.style.setProperty('--lineHeightH1', '{site:settings.plugin.genf.fonts.lineHeightH1}');
-document.documentElement.style.setProperty('--lineHeightH2', '{site:settings.plugin.genf.fonts.lineHeightH2}');
-document.documentElement.style.setProperty('--lineHeightH3', '{site:settings.plugin.genf.fonts.lineHeightH3}');
-document.documentElement.style.setProperty('--lineHeightH4', '{site:settings.plugin.genf.fonts.lineHeightH4}');
-document.documentElement.style.setProperty('--primarycolorh1', '{site:settings.plugin.genf.fonts.primarycolorh1}');
-document.documentElement.style.setProperty('--primarycolorh2', '{site:settings.plugin.genf.fonts.primarycolorh2}');
-document.documentElement.style.setProperty('--primarycolorh3', '{site:settings.plugin.genf.fonts.primarycolorh3}');
-document.documentElement.style.setProperty('--primarycolorh4', '{site:settings.plugin.genf.fonts.primarycolorh4}');
-document.documentElement.style.setProperty('--footerfarbe', '{site:settings.plugin.genf.footer.footerfarbe}');
-document.documentElement.style.setProperty('--footerfarbe2', '{site:settings.plugin.genf.footer.footerfarbe2}');
-document.documentElement.style.setProperty('--footerschriftoben', '{site:settings.plugin.genf.footer.footerschriftoben}');
-document.documentElement.style.setProperty('--footerschriftunten', '{site:settings.plugin.genf.footer.footerschriftunten}');
-document.documentElement.style.setProperty('--footerlinks', '{site:settings.plugin.genf.footer.footerLinks}');
-document.documentElement.style.setProperty('--footerrand', '{site:settings.plugin.genf.footer.footerrand}');
-document.documentElement.style.setProperty('--footerrandbreite', '{site:settings.plugin.genf.footer.footerrandbreite}');
-document.documentElement.style.setProperty('--buttoncolor', '{site:settings.plugin.genf.button.buttoncolor}');
-document.documentElement.style.setProperty('--buttonschriftfarbe', '{site:settings.plugin.genf.button.buttonschriftfarbe}');
-document.documentElement.style.setProperty('--buttonmargin', '{site:settings.plugin.genf.button.buttonmargin}');
-document.documentElement.style.setProperty('--buttonradius', '{site:settings.plugin.genf.button.buttonradius}');
-document.documentElement.style.setProperty('--buttonpadding', '{site:settings.plugin.genf.button.buttonpadding}');
-document.documentElement.style.setProperty('--buttonwidth', '{site:settings.plugin.genf.button.buttonwidth}');
-document.documentElement.style.setProperty('--burgerfarbe', '{site:settings.plugin.genf.vorgaben.burgerfarbe}');
-(function () {
-  var logoWidth = '{site:settings.plugin.genf.sitelogo.siteLogoWidth}'.trim();
-  if (/^\d+$/.test(logoWidth)) {
-    logoWidth = logoWidth + 'px';
-  }
-  if (!logoWidth) {
-    logoWidth = '200px';
-  }
-  document.documentElement.style.setProperty('--siteLogoWidth', logoWidth);
-})();
-document.documentElement.style.setProperty('--sliderhoehe', '{site:settings.plugin.genf.slider.sliderhoehe}');
-document.documentElement.style.setProperty('--farbeTrenner', '{site:settings.plugin.genf.trenner.farbeTrenner}');
-document.documentElement.style.setProperty('--hoehetrenner', '{site:settings.plugin.genf.trenner.hoehetrenner}');
-document.documentElement.style.setProperty('--abstandtrenneroben', '{site:settings.plugin.genf.trenner.abstandtrenneroben}');
-document.documentElement.style.setProperty('--abstandtrennerunten', '{site:settings.plugin.genf.trenner.abstandtrennerunten}');
-document.documentElement.style.setProperty('--containerclasscolor', '{site:settings.plugin.genf.bereiche.containerclasscolor}');
-document.documentElement.style.setProperty('--containerclasscolor2', '{site:settings.plugin.genf.bereiche.containerclasscolor2}');
-document.documentElement.style.setProperty('--containerclasscolor3', '{site:settings.plugin.genf.bereiche.containerclasscolor3}');
-document.documentElement.style.setProperty('--containerclasspadding', '{site:settings.plugin.genf.bereiche.containerclasspadding}');
-document.documentElement.style.setProperty('--containerclasspadding2', '{site:settings.plugin.genf.bereiche.containerclasspadding2}');
-document.documentElement.style.setProperty('--containerclasspadding3', '{site:settings.plugin.genf.bereiche.containerclasspadding3}');
-document.documentElement.style.setProperty('--accordioncolor', '{site:settings.plugin.genf.accordion.accordioncolor}');
-document.documentElement.style.setProperty('--accordioncolorueberschrift', '{site:settings.plugin.genf.accordion.accordioncolorueberschrift}');
-</script>
-)
+page.headerData.220 = USER
+page.headerData.220 {
+    userFunc = Mindbuilding\Genf\User\SiteCssVariablesUserFunc->render
+}
