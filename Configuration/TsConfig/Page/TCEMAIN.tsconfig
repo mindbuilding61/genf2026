@@ -1,6 +1,21 @@
 #
-# TCEMAIN
+# TCEMAIN (siehe auch Configuration/TsConfig/page.tsconfig)
 #
 TCEMAIN {
+	translateToMessage =
+}
 
+TCEMAIN.default {
+	disablePrependAtCopy = 1
+	disableHideAtCopy = 1
+}
+
+TCEMAIN.table.pages {
+	disablePrependAtCopy = 1
+	disableHideAtCopy = 1
+}
+
+TCEMAIN.table.tt_content {
+	disablePrependAtCopy = 1
+	disableHideAtCopy = 1
 }

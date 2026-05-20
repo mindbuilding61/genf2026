@@ -27,7 +27,7 @@ TCEFORM.tt_content.layout {
 	addItems {
 		3 = Normal
 		4 = Zitat
-		5 = Perfekter Blocksatz
+		5 = Grauer Rahmen
 		6 = Roter Rahmen
 		7 = Oranger Rahmen
 		8 = Blauer Rahmen
@@ -92,8 +92,22 @@ TCEFORM.pages {
 	}
 }
 
-# --- Kopierverhalten ---
+# --- Kopieren & Übersetzen: sichtbar, ohne "(copy)" / "[Translate to …]" ---
+TCEMAIN {
+	translateToMessage =
+}
+
+TCEMAIN.default {
+	disablePrependAtCopy = 1
+	disableHideAtCopy = 1
+}
+
 TCEMAIN.table.pages {
+	disablePrependAtCopy = 1
+	disableHideAtCopy = 1
+}
+
+TCEMAIN.table.tt_content {
 	disablePrependAtCopy = 1
 	disableHideAtCopy = 1
 }
