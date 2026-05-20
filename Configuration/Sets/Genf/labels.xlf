@@ -53,11 +53,17 @@
             <trans-unit id="settings.plugin.genf.fonts.fontsize">
                 <source>Base font size</source>
             </trans-unit>
+            <trans-unit id="settings.plugin.genf.fonts.lineheight">
+                <source>Base line height</source>
+            </trans-unit>
             <trans-unit id="settings.plugin.genf.fonts.family1">
                 <source>H1 font family</source>
             </trans-unit>
             <trans-unit id="settings.plugin.genf.fonts.fontSizeH1">
                 <source>H1 font size</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.genf.fonts.lineHeightH1">
+                <source>H1 line height</source>
             </trans-unit>
             <trans-unit id="settings.plugin.genf.fonts.primarycolorh1">
                 <source>H1 color</source>
@@ -68,17 +74,26 @@
             <trans-unit id="settings.plugin.genf.fonts.fontSizeH2">
                 <source>H2 font size</source>
             </trans-unit>
+            <trans-unit id="settings.plugin.genf.fonts.lineHeightH2">
+                <source>H2 line height</source>
+            </trans-unit>
             <trans-unit id="settings.plugin.genf.fonts.primarycolorh2">
                 <source>H2 color</source>
             </trans-unit>
             <trans-unit id="settings.plugin.genf.fonts.family3">
                 <source>H3 font family</source>
             </trans-unit>
+            <trans-unit id="settings.plugin.genf.fonts.lineHeightH3">
+                <source>H3 line height</source>
+            </trans-unit>
             <trans-unit id="settings.plugin.genf.fonts.primarycolorh3">
                 <source>H3 color</source>
             </trans-unit>
             <trans-unit id="settings.plugin.genf.fonts.family4">
                 <source>H4 font family</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.genf.fonts.lineHeightH4">
+                <source>H4 line height</source>
             </trans-unit>
             <trans-unit id="settings.plugin.genf.fonts.primarycolorh4">
                 <source>H4 color</source>

@@ -135,6 +135,7 @@ settings:
       Montserrat: Montserrat
       'Open Sans': Open Sans
       'Fraunces': Fraunces
+      'Merriweather': Merriweather
       Roboto: Roboto
       'Spline Sans': Spline Sans
       Hind: Hind
@@ -143,6 +144,11 @@ settings:
   plugin.genf.fonts.fontsize:
     label: 'Standard-Schriftgröße'
     default: ''
+    type: string
+    category: genf.fonts
+  plugin.genf.fonts.lineheight:
+    label: 'Standard-Zeilenabstand'
+    default: '1.3'
     type: string
     category: genf.fonts
   plugin.genf.fonts.primarycolor:
@@ -165,11 +171,17 @@ settings:
       'Spline Sans': Spline Sans
       Hind: Hind
       Spectral: Spectral
+      Merriweather: Merriweather
       Lora: Lora
     category: genf.fonts
   plugin.genf.fonts.fontSizeH1:
     label: 'Schriftgröße H1'
     default: '2rem'
+    type: string
+    category: genf.fonts
+  plugin.genf.fonts.lineHeightH1:
+    label: 'Zeilenabstand H1'
+    default: '1.6rem'
     type: string
     category: genf.fonts
   plugin.genf.fonts.primarycolorh1:
@@ -187,6 +199,7 @@ settings:
       'Roboto Serif': Roboto Serif
       'EB Garamond': EB Garamond
       Montserrat: Montserrat
+      Merriweather: Merriweather
       'Open Sans': Open Sans
       Roboto: Roboto
       'Spline Sans': Spline Sans
@@ -197,6 +210,11 @@ settings:
   plugin.genf.fonts.fontSizeH2:
     label: 'Schriftgröße H2'
     default: '1.7rem'
+    type: string
+    category: genf.fonts
+  plugin.genf.fonts.lineHeightH2:
+    label: 'Zeilenabstand H2'
+    default: '1.9rem'
     type: string
     category: genf.fonts
   plugin.genf.fonts.primarycolorh2:
@@ -214,11 +232,17 @@ settings:
       'Roboto Serif': Roboto Serif
       'EB Garamond': EB Garamond
       Montserrat: Montserrat
+      Merriweather: Merriweather
       'Open Sans': Open Sans
       Roboto: Roboto
       'Spline Sans': Spline Sans
       Hind: Hind
       Spectral: Spectral
+    category: genf.fonts
+  plugin.genf.fonts.lineHeightH3:
+    label: 'Zeilenabstand H3'
+    default: '1.7rem'
+    type: string
     category: genf.fonts
   plugin.genf.fonts.primarycolorh3:
     label: 'Schriftfarbe H3'
@@ -234,12 +258,18 @@ settings:
       Raleway: Raleway
       'Roboto Serif': Roboto Serif
       'EB Garamond': EB Garamond
+      Merriweather: Merriweather
       Montserrat: Montserrat
       'Open Sans': Open Sans
       Roboto: Roboto
       'Spline Sans': Spline Sans
       Hind: Hind
       Spectral: Spectral
+    category: genf.fonts
+  plugin.genf.fonts.lineHeightH4:
+    label: 'Zeilenabstand H4'
+    default: '1.7rem'
+    type: string
     category: genf.fonts
   plugin.genf.fonts.primarycolorh4:
     label: 'Schriftfarbe H4'

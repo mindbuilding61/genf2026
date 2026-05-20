@@ -221,6 +221,7 @@ fontMontserrat = EXT:genf2026/Resources/Public/Css/montserrat.css
 fontSplineSans = EXT:genf2026/Resources/Public/Css/spline.css
 fontHind = EXT:genf2026/Resources/Public/Css/hind.css
 fontSpectral = EXT:genf2026/Resources/Public/Css/spectral.css
+fontMerriweather = EXT:genf2026/Resources/Public/Css/merriweather.css
 }
 
 
@@ -325,6 +326,7 @@ const family4 = '{site:settings.plugin.genf.fonts.family4}' || baseFamily;
 const quoteFamily = (font) => font.includes(' ') ? `"${font}"` : font;
 document.documentElement.style.setProperty('--primarycolor', '{site:settings.plugin.genf.fonts.primarycolor}');
 document.documentElement.style.setProperty('--fontsize', '{site:settings.plugin.genf.fonts.fontsize}');
+document.documentElement.style.setProperty('--lineheight', '{site:settings.plugin.genf.fonts.lineheight}');
 document.documentElement.style.setProperty('--fontfamily', quoteFamily(baseFamily));
 document.documentElement.style.setProperty('--family1', quoteFamily(family1));
 document.documentElement.style.setProperty('--family2', quoteFamily(family2));
@@ -332,6 +334,10 @@ document.documentElement.style.setProperty('--family3', quoteFamily(family3));
 document.documentElement.style.setProperty('--family4', quoteFamily(family4));
 document.documentElement.style.setProperty('--fontSizeH1', '{site:settings.plugin.genf.fonts.fontSizeH1}');
 document.documentElement.style.setProperty('--fontSizeH2', '{site:settings.plugin.genf.fonts.fontSizeH2}');
+document.documentElement.style.setProperty('--lineHeightH1', '{site:settings.plugin.genf.fonts.lineHeightH1}');
+document.documentElement.style.setProperty('--lineHeightH2', '{site:settings.plugin.genf.fonts.lineHeightH2}');
+document.documentElement.style.setProperty('--lineHeightH3', '{site:settings.plugin.genf.fonts.lineHeightH3}');
+document.documentElement.style.setProperty('--lineHeightH4', '{site:settings.plugin.genf.fonts.lineHeightH4}');
 document.documentElement.style.setProperty('--primarycolorh1', '{site:settings.plugin.genf.fonts.primarycolorh1}');
 document.documentElement.style.setProperty('--primarycolorh2', '{site:settings.plugin.genf.fonts.primarycolorh2}');
 document.documentElement.style.setProperty('--primarycolorh3', '{site:settings.plugin.genf.fonts.primarycolorh3}');
