@@ -1,0 +1,54 @@
+<f:spaceless>
+<div class="main">
+    <f:render partial="MegaMenu" arguments="{_all}"/>
+</div>
+<script>
+  (function () {
+    function applyMenuOffset() {
+      const nav = document.querySelector('nav.navbar.fixed-top');
+      const menuHeightRaw = nav ? nav.getBoundingClientRect().height : 0;
+      const menuHeight = Math.ceil(menuHeightRaw);
+
+      if (!nav || menuHeight <= 0) {
+        document.body.style.paddingTop = '';
+        document.documentElement.style.scrollPaddingTop = '';
+        document.documentElement.style.setProperty('--menuHeight', '');
+        return;
+      }
+
+      const px = menuHeight + 'px';
+      document.body.style.paddingTop = px;
+      document.documentElement.style.scrollPaddingTop = px;
+      document.documentElement.style.setProperty('--menuHeight', px);
+    }
+
+    window.addEventListener('DOMContentLoaded', applyMenuOffset);
+    window.addEventListener('load', applyMenuOffset);
+    window.addEventListener('resize', applyMenuOffset);
+    window.setTimeout(applyMenuOffset, 50);
+    window.setTimeout(applyMenuOffset, 400);
+    document.fonts && document.fonts.ready.then(applyMenuOffset).catch(function () {});
+  })();
+</script>
+<div class="slider">
+    <f:render section="Slider" />
+</div>
+<f:render partial="rootline" arguments="{_all}"/>
+<div class="main">
+    <f:render section="Main2" />
+</div>
+<div class="slidersection">
+    <div class="sliderunten">
+        <f:render section="sliderunten" />
+    </div>
+    <div class="sliderinhalt">
+        <f:render section="sliderinhalt" />
+    </div>
+</div>
+<div class="mainunten">
+    <f:render section="Main_unten" />
+</div>
+<div class="footer">
+    <f:render section="Footer" />
+</div>
+</f:spaceless>

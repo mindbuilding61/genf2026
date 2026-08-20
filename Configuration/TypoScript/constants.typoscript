@@ -3,6 +3,9 @@
 ######################
 @import 'EXT:fluid_styled_content/Configuration/TypoScript/constants.typoscript'
 
+styles.content.textmedia.maxW = 1920
+styles.content.textmedia.maxWInText = 800
+
 
 ##############################
 #### FLUID STYLED CONTENT ####
@@ -277,3 +280,8 @@ abstand = 0
     }
 
 }
+
+plugin.tx_wsslider.settings.swiper.loop = true
+plugin.tx_wsslider.settings.swiper.autoplay.active = true
+plugin.tx_wsslider.settings.swiper.autoplay.delay = 4000
+

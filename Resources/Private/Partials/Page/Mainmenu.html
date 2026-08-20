@@ -4,22 +4,6 @@
 <f:spaceless>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="bluemenue">
-            <f:if condition="{bluemenue}">
-                <ul class="horizontal-list">
-                    <div class="telefon">05244 97305 0</div><div class="email"> info@iwa-maschinenbau.de</div>
-                    <div class="impressum">
-                    <f:for each="{bluemenue}" as="bluemenueItem">
-                        <li>
-                            <a href="{bluemenueItem.link}" target="_self" title="{bluemenueItem.title}"{f:if(condition: bluemenueItem.current, then: ' aria-current="page"')}>
-                            <span>{bluemenueItem.title}</span>
-                            </a>
-                        </li>
-                    </f:for>
-                    </div>
-                </ul>
-            </f:if>
-        </div>
         <div class="container">
             <f:link.page pageUid="1" class="navbar-brand" title="{settings.siteTitle}">
                 <f:if condition="{settings.sitelogo}">

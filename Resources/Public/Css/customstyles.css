@@ -1704,3 +1704,34 @@ h5 {
                 width: 100%;
             }
         }
+    }
+}
+
+/* WS Slider (Swiper) as top hero */
+.slider:has(.swiper) {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.slider .swiper {
+    width: 100%;
+}
+.slider .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+.slider .swiper-button-prev,
+.slider .swiper-button-next {
+    color: #fff;
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.45);
+}
+.slider .swiper-pagination-bullet-active {
+    background: #fff;
+}
+@media (min-width: 992px) {
+    .slider .swiper-slide img {
+        height: 560px;
+    }
+}

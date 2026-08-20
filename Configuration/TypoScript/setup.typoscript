@@ -151,13 +151,6 @@ special = rootline
 special.range = 0|-1
 }
 
-23 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
-23 {
-as = bluemenue
-special = directory
-special.value = 7
-}
-
 26 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
 26 {
 as = footerMenu
@@ -226,6 +219,8 @@ fontHind = EXT:genf2026/Resources/Public/Css/hind.css
 fontSpectral = EXT:genf2026/Resources/Public/Css/spectral.css
 fontMerriweather = EXT:genf2026/Resources/Public/Css/merriweather.css
 fontPtserif = EXT:genf2026/Resources/Public/Css/ptserif.css
+megamenu = EXT:genf2026/Resources/Public/Css/megamenu.css
+stackParallax = EXT:genf2026/Resources/Public/Css/stack-parallax.css
 }
 
 
@@ -241,6 +236,8 @@ height = EXT:genf2026/Resources/Public/JavaScript/height.js
 includeJSFooterlibs {
 main = EXT:genf2026/Resources/Public/JavaScript/Dist/javascript.js
 aos = EXT:genf2026/Resources/Public/JavaScript/Dist/aos.js
+megamenu = EXT:genf2026/Resources/Public/JavaScript/megamenu.js
+parallax = EXT:genf2026/Resources/Public/JavaScript/parallax.js
 }
 }
 
@@ -251,6 +248,9 @@ templateRootPaths {
 300 = EXT:genf2026/Resources/Private/Templates/Texteladen/
 }
 }
+
+lib.contentElement.templateRootPaths.100 = EXT:genf2026/Resources/Private/Templates/ContentElements/
+tt_content.textmedia.templateRootPaths.100 = EXT:genf2026/Resources/Private/Templates/ContentElements/
 
 ################
 #### CONFIG ####

@@ -1,3 +1,4 @@
 @import 'EXT:genf2026/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts/default.tsconfig'
 @import 'EXT:genf2026/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts/kasten.tsconfig'
 @import 'EXT:genf2026/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts/FooterBackendLayout.tsconfig'
+@import 'EXT:genf2026/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts/megamenu.tsconfig'

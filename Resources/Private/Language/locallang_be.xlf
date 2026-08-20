@@ -15,6 +15,9 @@
             <trans-unit id="backend_layout.footer">
                 <source>Footer</source>
             </trans-unit>
+            <trans-unit id="backend_layout.megamenu">
+                <source>Megamenü</source>
+            </trans-unit>
             <trans-unit id="backend_layout.column.normal">
                 <source>Normal</source>
             </trans-unit>

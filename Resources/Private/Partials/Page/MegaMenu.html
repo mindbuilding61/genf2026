@@ -1,0 +1,80 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:genf="http://typo3.org/ns/Mindbuilding/Genf/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<f:spaceless>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar--megamenu">
+        <div class="container mega-menu-bar">
+            <f:link.page pageUid="1" class="navbar-brand" title="{settings.siteTitle}">
+                <f:if condition="{settings.sitelogo}">
+                    <f:then>
+                        <f:image
+                            src="{settings.sitelogo -> genf:normalizeLogoPath()}"
+                            alt="{f:if(condition: settings.logoAlt, then: settings.logoAlt, else: settings.siteTitle)}"
+                            class="ps-logo"
+                            width="{settings.siteLogoWidth -> genf:formatLogoWidth(pixelsOnly: 1)}"
+                            style="width: {settings.siteLogoWidth -> genf:formatLogoWidth()}; max-width: 100%; height: auto;"
+                        />
+                    </f:then>
+                    <f:else>
+                        <f:cObject typoscriptObjectPath="lib.logo" />
+                    </f:else>
+                </f:if>
+            </f:link.page>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMegaMenu" aria-controls="navbarMegaMenu" aria-expanded="false" aria-label="Menü öffnen">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMegaMenu">
+                <ul class="nav navbar-nav mr-auto mega-menu-nav">
+                    <f:for each="{mainMenu}" as="mainMenuItem">
+                        <li class="nav-item{f:if(condition: mainMenuItem.children, then: ' dropdown mega')}{f:if(condition: mainMenuItem.current, then: ' current')}{f:if(condition: mainMenuItem.active, then: ' active')}">
+                            <a href="{mainMenuItem.link}" class="nav-link{f:if(condition: '{mainMenuItem.children}', then: ' dropdown-toggle')}{f:if(condition: mainMenuItem.current, then: ' current')}{f:if(condition: mainMenuItem.active, then: ' active')}"{f:if(condition: '{mainMenuItem.children}', then: ' aria-haspopup="true" aria-expanded="false"')}>{mainMenuItem.title}</a>
+                            <f:if condition="{mainMenuItem.children}">
+                                <div class="dropdown-menu mega-menu" role="menu">
+                                    <div class="mega-menu__grid">
+                                        <f:for each="{mainMenuItem.children}" as="columnItem">
+                                            <div class="mega-menu__group">
+                                                <a class="mega-menu__heading{f:if(condition: columnItem.current, then: ' current')}{f:if(condition: columnItem.active, then: ' active')}" href="{columnItem.link}">
+                                                    <span class="mega-menu__icon" aria-hidden="true"></span>
+                                                    <span class="mega-menu__heading-text">{columnItem.title}</span>
+                                                </a>
+                                                <f:if condition="{columnItem.children}">
+                                                    <ul class="mega-menu__links">
+                                                        <f:for each="{columnItem.children}" as="linkItem">
+                                                            <li>
+                                                                <a class="mega-menu__link{f:if(condition: linkItem.current, then: ' current')}{f:if(condition: linkItem.active, then: ' active')}" href="{linkItem.link}">{linkItem.title}</a>
+                                                            </li>
+                                                        </f:for>
+                                                    </ul>
+                                                </f:if>
+                                            </div>
+                                        </f:for>
+                                    </div>
+                                </div>
+                            </f:if>
+                        </li>
+                    </f:for>
+                </ul>
+                <f:if condition="{languageMenu}">
+                    <ul class="languagemenue">
+                        <f:for each="{languageMenu}" as="item">
+                            <li class="{f:if(condition: item.active, then: 'active')} {f:if(condition: item.available, else: 'text-muted')}">
+                                <f:if condition="{item.available}">
+                                    <f:then>
+                                        <a href="{item.link}" hreflang="{item.hreflang}" title="{item.title}">
+                                            <span><core:icon identifier="flags-{item.twoLetterIsoCode}{f:if(condition: '{item.twoLetterIsoCode} == en', then: '-us-gb')}" size="small" /></span>
+                                        </a>
+                                    </f:then>
+                                    <f:else>
+                                        <span><core:icon identifier="{item.flag}" size="small" /></span>
+                                    </f:else>
+                                </f:if>
+                            </li>
+                        </f:for>
+                    </ul>
+                </f:if>
+            </div>
+        </div>
+    </nav>
+</f:spaceless>
+</html>
