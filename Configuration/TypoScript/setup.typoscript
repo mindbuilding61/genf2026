@@ -220,7 +220,6 @@ fontSpectral = EXT:genf2026/Resources/Public/Css/spectral.css
 fontMerriweather = EXT:genf2026/Resources/Public/Css/merriweather.css
 fontPtserif = EXT:genf2026/Resources/Public/Css/ptserif.css
 megamenu = EXT:genf2026/Resources/Public/Css/megamenu.css
-stackParallax = EXT:genf2026/Resources/Public/Css/stack-parallax.css
 }
 
 
@@ -237,7 +236,6 @@ includeJSFooterlibs {
 main = EXT:genf2026/Resources/Public/JavaScript/Dist/javascript.js
 aos = EXT:genf2026/Resources/Public/JavaScript/Dist/aos.js
 megamenu = EXT:genf2026/Resources/Public/JavaScript/megamenu.js
-parallax = EXT:genf2026/Resources/Public/JavaScript/parallax.js
 }
 }
 
@@ -248,9 +246,6 @@ templateRootPaths {
 300 = EXT:genf2026/Resources/Private/Templates/Texteladen/
 }
 }
-
-lib.contentElement.templateRootPaths.100 = EXT:genf2026/Resources/Private/Templates/ContentElements/
-tt_content.textmedia.templateRootPaths.100 = EXT:genf2026/Resources/Private/Templates/ContentElements/
 
 ################
 #### CONFIG ####
