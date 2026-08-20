@@ -9,10 +9,10 @@ $EM_CONF[$_EXTKEY] = [
     'category' => 'templates',
     'constraints' => [
         'depends' => [
-            'typo3' => '13.4.0-13.4.99',
-            'fluid_styled_content' => '13.4.0-13.4.99',
-            'rte_ckeditor' => '13.4.0-13.4.99',
-            'container' => '3.2.0-3.99.99',
+            'typo3' => '13.4.0-14.4.99',
+            'fluid_styled_content' => '13.4.0-14.4.99',
+            'rte_ckeditor' => '13.4.0-14.4.99',
+            'container' => '3.2.0-4.99.99',
         ],
         'conflicts' => [
         ],

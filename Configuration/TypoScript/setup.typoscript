@@ -2,7 +2,6 @@
 #### DEPENDENCIES ####
 ######################
 @import 'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript'
-@import 'EXT:fluid_styled_content/Configuration/TypoScript/container.typoscript'
 @import 'EXT:genf2026/Configuration/TypoScript/container.typoscript'
 
 
